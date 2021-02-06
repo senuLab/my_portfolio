@@ -1,0 +1,22 @@
+@mixin mq($breakpoint: "sp") {
+  @media #{map-get($breakpoints,$breakpoint)} {
+    @content;
+  }
+}
+
+@mixin animation($animation-name) {
+  animation: $animation-name;
+  animation-fill-mode: both;
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}

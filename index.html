@@ -4,9 +4,161 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+      rel="stylesheet"
+    />
     <title>senuLab</title>
   </head>
   <body>
-    <p>K</p>
+    <!-- loading start -->
+    <!-- <div class="p-load">
+      <p class="p-load__message">senuLab</p>
+    </div> -->
+    <!-- loading end -->
+
+    <!-- header start -->
+    <header class="l-header js-header">
+      <div class="p-header">
+        <img class="p-header__logo js-logo" src="./img/logo.png" alt="" />
+        <img
+          class="p-header__logo js-logo--dark stickyadd__logo--hide"
+          src="./img/logo-dark.png"
+          alt=""
+        />
+        <nav class="p-nav js-nav">
+          <ul class="p-nav__items">
+            <li class="p-nav__item">
+              <a href="#" class="p-nav__link c-link js-link">About</a>
+            </li>
+            <li class="p-nav__item">
+              <a href="#" class="p-nav__link c-link js-link">Skill</a>
+            </li>
+            <li class="p-nav__item">
+              <a href="#" class="p-nav__link c-link js-link">Work</a>
+            </li>
+            <li class="p-nav__item">
+              <a href="#" class="p-nav__link c-link js-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="p-nav__trigger u-display--pc-none js-trigger">
+          <span class="js-trigger-part p-nav__trigger-part"></span>
+          <span class="js-trigger-part p-nav__trigger-part"></span>
+          <span class="js-trigger-part p-nav__trigger-part"></span>
+        </div>
+        <!-- <div class="p-nav__overlay"></div> -->
+        <!-- <nav class="">
+        </nav> -->
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- top-start -->
+    <section class="p-top">
+      <div class="p-top__overlay"></div>
+      <div class="p-top__content">
+        <h1 class="c-title">senuLab</h1>
+        <p class="p-top__message">This is Issei's portfolio.</p>
+        <button class="c-btn">contact</button>
+      </div>
+    </section>
+    <!-- top end -->
+
+    <!-- about start -->
+    <section class="p-about">
+      <h2 class="p-about__title c-title">About</h2>
+      <div class="p-about__content">
+        <div class="p-about__img-wrap">
+          <!-- <img src="./img/アイコン.png" alt="" class="c-img" /> -->
+        </div>
+        <div class="p-about__message">
+          ご訪問いただきありがとうございます。近藤一晟と申します。
+          岩手大学院で情報工学を専攻し、2020年3月に修了。現在はweb制作活動をしています。
+          保有資格 応用情報技術者 TOEI875点
+        </div>
+      </div>
+    </section>
+    <!-- about end -->
+
+    <!-- skill start -->
+    <section class="p-skill">
+      <h2 class="p-skill__title c-title">Skill</h2>
+      <div class="p-skill__wrap">
+        <p class="p-skill__kind">markup</p>
+        <div class="p-skill__item">
+          <i class="skill-icon fab fa-html5"></i>
+          <p class="skill-name">HTML</p>
+        </div>
+        <div class="p-skill__item">
+          <i class="skill-icon fab fa-html5"></i>
+          <p class="skill-name">HTML</p>
+        </div>
+      </div>
+      <div class="p-skill__wrap">
+        <div class="p-skill__item">
+          <i class="skill-icon fab fa-html5"></i>
+          <p class="skill-name">HTML</p>
+        </div>
+      </div>
+      <div class="p-skill__wrap">
+        <div class="p-skill__item">
+          <i class="skill-icon fab fa-html5"></i>
+          <p class="skill-name">HTML</p>
+        </div>
+      </div>
+    </section>
+    <!-- skill end -->
+
+    <!-- work start -->
+    <section class="p-work">
+      <h2 class="p-work__title c-title">Work</h2>
+      <div class="p-work__wrap">
+        <div class="p-work__item">
+          <!-- <img src="./img/work.jpg" alt="" class="c-img" /> -->
+          <h3 class="p-work__introduction">妹のサイト</h3>
+          <p class="p-work__description">
+            デザインからコーディングまで行いました
+          </p>
+        </div>
+      </div>
+      <div class="p-work__item">
+        <img src="" alt="" class="c-img" />
+        <h3 class="p-work__introduction"></h3>
+        <p class="p-work__description"></p>
+      </div>
+    </section>
+    <!-- work end -->
+
+    <!-- contact start -->
+    <section class="p-contact">
+      <form action="">
+        <label class="p-contact__label">Name</label>
+        <input type="text" class="p-contact__input" />
+        <label class="p-contact__label">Kana</label>
+        <input type="text" class="p-contact__input" />
+        <label class="p-contact__label">E-mail</label>
+        <input type="email" class="p-contact__input" />
+        <label class="p-contact__label">Message</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <button class="c-btn c-btn--red">Submit</button>
+      </form>
+    </section>
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <footer class="l-footer">
+      <div class="p-footer">
+        <p class="p-footer__copyright">copy</p>
+      </div>
+    </footer>
+
+    <div class="p-to-top">
+      <p>top</p>
+    </div>
+    <!-- footer end -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./js/custom.js"></script>
   </body>
 </html>

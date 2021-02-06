@@ -1,0 +1,71 @@
+@include keyframes(shutterMessage) {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@include keyframes(byeShutter) {
+  80% {
+    opacity: 1;
+  }
+  99% {
+    z-index: 9999;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}
+
+@include keyframes(shutterOpen1) {
+  0% {
+    width: 0;
+    height: 1px;
+  }
+  60% {
+    width: 100%;
+    height: 1px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+}
+
+@include keyframes(shutterOpen2) {
+  65% {
+    width: 120%;
+    height: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    width: 120%;
+    height: 100%;
+    opacity: 0;
+  }
+}
+
+@include keyframes(contentScale) {
+  65% {
+    transform: perspective(800px) scale(0.9);
+  }
+  80% {
+    transform: perspective(800px) scale(1);
+  }
+}
