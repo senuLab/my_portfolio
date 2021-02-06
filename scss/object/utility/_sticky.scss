@@ -1,0 +1,26 @@
+.stickyadd {
+  &__header {
+    height: 4rem;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    @include mq("pc") {
+      height: 6rem;
+    }
+  }
+
+  &__logo--hide {
+    display: none;
+  }
+
+  &__link {
+    color: black;
+  }
+
+  &__trigger-part {
+    background-color: black;
+  }
+
+  &__nav {
+    background-color: white;
+  }
+}
