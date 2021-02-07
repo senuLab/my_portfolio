@@ -1,6 +1,3 @@
-
-
-
 $(function(){
     $(window).on('scroll',function() {
         var scroll = $(window).scrollTop();
@@ -25,6 +22,12 @@ $(function(){
             logo.removeClass("stickyadd__logo--hide");
             logo_dark.addClass("stickyadd__logo--hide");
             nav.removeClass("stickyadd__nav");
+        }
+
+        if ($(this).scrollTop() > 100) {
+            $('.p-to-top').fadeIn();
+        } else {
+            $('.p-to-top').fadeOut();
         }
     });
 
@@ -56,5 +59,29 @@ $(function(){
         }
         return false;
     }); 
+
+    const randomness = 100, // 振れ幅（例：90の場合は0〜90の値になる）
+		  threshold = 200; // 元のサイズ
+	const randomness02 = 100, // 振れ幅（例：90の場合は0〜90の値になる）
+		  threshold02 = 200; // 元のサイズ
+
+
+	// 流体アニメーション関数を定義
+	const fluid = function () {
+
+		// animate関数を使用
+		$('.p-about__img-wrap').animate({
+			borderTopLeftRadius: String(Math.round((Math.random() * randomness02 + threshold02)) + 'px'),
+			borderTopRightRadius: String(Math.round((Math.random() * randomness + threshold)) + 'px'),
+			borderBottomLeftRadius: String(Math.round((Math.random() * randomness + threshold)) + 'px'),
+			borderBottomRightRadius: String(Math.round((Math.random() * randomness02 + threshold02)) + 'px'),
+		}, {
+			duration: 900,　//形が変わる速さ
+			complete: fluid　//繰り返し
+		});
+	}
+
+	// 流体アニメーション関数を実行
+	fluid();
     
 });

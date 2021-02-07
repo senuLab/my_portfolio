@@ -1,0 +1,28 @@
+.p-work {
+  padding: 10rem 0;
+  background-color: $color-gray;
+
+  @include mq("pc") {
+    padding: 10rem 0;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 0;
+    margin: 0 auto 7rem;
+
+    @include mq("pc") {
+      margin-bottom: 8rem;
+    }
+
+    &::before {
+      position: absolute;
+      content: "W";
+      top: -2rem;
+      left: -1.5rem;
+      z-index: -1;
+      color: $color-pink;
+      font-size: 4rem;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.p-about {
+  padding: 10rem 2rem;
+  background-color: $color-gray;
+
+  @include mq("pc") {
+    padding: 10rem 0;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 0;
+    margin: 0 auto 7rem;
+
+    @include mq("pc") {
+      margin-bottom: 8rem;
+    }
+
+    &::before {
+      position: absolute;
+      content: "A";
+      top: -2rem;
+      left: -1.5rem;
+      z-index: -1;
+      color: $color-pink;
+      font-size: 4rem;
+    }
+  }
+
+  &__content {
+    @include mq("pc") {
+      display: flex;
+      margin: 0 auto;
+      width: 70rem;
+    }
+  }
+
+  &__img-wrap {
+    position: relative;
+    margin: 0 auto 4rem;
+    width: 20rem;
+    height: 20rem;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(225, 230, 243, 0.75) 0%,
+      rgba(188, 199, 229, 0.75) 100%
+    );
+    //@include animation(rotation 30s ease 0s infinite normal both);
+
+    @include mq("pc") {
+      flex-basis: 30rem;
+      margin: 0 5rem 0 0;
+      //width: 25rem;
+      height: 30rem;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 35rem;
+  }
+}

@@ -17,6 +17,21 @@
   }
 
   &__content {
+    position: relative;
     padding: 12rem 0 14rem 0;
+    width: fit-content;
+    margin: 0 auto;
+
+    @include mq("pc") {
+      padding: 30rem 0 30rem 0;
+    }
+  }
+
+  &__message {
+    color: white;
+  }
+
+  &__btn {
+    margin: 0 auto;
   }
 }

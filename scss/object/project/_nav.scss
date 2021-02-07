@@ -9,7 +9,7 @@
   background-color: black;
 
   @include mq("pc") {
-    display: block;
+    display: block !important;
     position: static;
     margin: auto 0;
     width: auto;
@@ -47,13 +47,34 @@
 
   &__link {
     display: block;
+    position: relative;
     transition: all 0.3s;
 
     @include mq("pc") {
-      margin: 0 0.8rem;
+      margin: 0 1.5rem;
       padding: 0.8rem 0;
       height: 4rem;
       line-height: 2.4rem;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+      width: 0;
+      height: 0.2rem;
+      background-color: $color-pink;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      color: $color-pink;
+    }
+
+    &:hover::after {
+      width: 100%;
     }
   }
 

@@ -1,0 +1,40 @@
+.p-skill {
+  padding: 10rem 0;
+  background-color: $color-cream;
+
+  &__title {
+    position: relative;
+    z-index: 0;
+    margin: 0 auto 7rem;
+
+    @include mq("pc") {
+      margin-bottom: 8rem;
+    }
+
+    &::before {
+      position: absolute;
+      content: "S";
+      top: -2rem;
+      left: -1.5rem;
+      z-index: -1;
+      color: $color-pink;
+      font-size: 4rem;
+    }
+  }
+
+  &__container {
+    @include mq("pc") {
+      display: flex;
+      width: 70rem;
+      margin: 0 auto;
+    }
+  }
+
+  &__wrap {
+    &:nth-child(2) {
+      @include mq("pc") {
+        margin: 0 auto;
+      }
+    }
+  }
+}

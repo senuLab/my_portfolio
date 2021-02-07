@@ -61,7 +61,7 @@
       <div class="p-top__content">
         <h1 class="c-title">senuLab</h1>
         <p class="p-top__message">This is Issei's portfolio.</p>
-        <button class="c-btn">contact</button>
+        <button class="p-top__btn c-btn">contact</button>
       </div>
     </section>
     <!-- top end -->
@@ -69,14 +69,26 @@
     <!-- about start -->
     <section class="p-about">
       <h2 class="p-about__title c-title">About</h2>
+      <div class="fluid rotate gradation"></div>
       <div class="p-about__content">
         <div class="p-about__img-wrap">
-          <!-- <img src="./img/アイコン.png" alt="" class="c-img" /> -->
+          <img
+            src="./img/アイコン.png"
+            alt=""
+            class="p-about__img c-img__icon"
+          />
         </div>
         <div class="p-about__message">
-          ご訪問いただきありがとうございます。近藤一晟と申します。
-          岩手大学院で情報工学を専攻し、2020年3月に修了。現在はweb制作活動をしています。
-          保有資格 応用情報技術者 TOEI875点
+          <p>
+            ご訪問いただきありがとうございます。<br />
+            近藤一晟と申します。岩手大学院で情報工学を専攻し、2020年3月に修了。現在はweb制作活動をしています。
+          </p>
+          <br />
+          <p>保有資格</p>
+          <ul>
+            <li>応用情報技術者</li>
+            <li>TOEI875点</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -85,27 +97,31 @@
     <!-- skill start -->
     <section class="p-skill">
       <h2 class="p-skill__title c-title">Skill</h2>
-      <div class="p-skill__wrap">
-        <p class="p-skill__kind">markup</p>
-        <div class="p-skill__item">
-          <i class="skill-icon fab fa-html5"></i>
-          <p class="skill-name">HTML</p>
+      <div class="p-skill__container">
+        <div class="p-skill__wrap">
+          <p class="p-skill__kind">markup</p>
+          <div class="p-skill__item">
+            <i class="skill-icon fab fa-html5"></i>
+            <p class="skill-name">HTML</p>
+          </div>
+          <div class="p-skill__item">
+            <i class="skill-icon fab fa-html5"></i>
+            <p class="skill-name">HTML</p>
+          </div>
         </div>
-        <div class="p-skill__item">
-          <i class="skill-icon fab fa-html5"></i>
-          <p class="skill-name">HTML</p>
+        <div class="p-skill__wrap">
+          <p class="p-skill__kind">programming</p>
+          <div class="p-skill__item">
+            <i class="skill-icon fab fa-html5"></i>
+            <p class="skill-name">HTML</p>
+          </div>
         </div>
-      </div>
-      <div class="p-skill__wrap">
-        <div class="p-skill__item">
-          <i class="skill-icon fab fa-html5"></i>
-          <p class="skill-name">HTML</p>
-        </div>
-      </div>
-      <div class="p-skill__wrap">
-        <div class="p-skill__item">
-          <i class="skill-icon fab fa-html5"></i>
-          <p class="skill-name">HTML</p>
+        <div class="p-skill__wrap">
+          <p class="p-skill__kind">tool</p>
+          <div class="p-skill__item">
+            <i class="skill-icon fab fa-html5"></i>
+            <p class="skill-name">HTML</p>
+          </div>
         </div>
       </div>
     </section>
@@ -133,6 +149,7 @@
 
     <!-- contact start -->
     <section class="p-contact">
+      <h2 class="p-contact__title c-title">Contact</h2>
       <form action="">
         <label class="p-contact__label">Name</label>
         <input type="text" class="p-contact__input" />
@@ -150,13 +167,16 @@
     <!-- footer start -->
     <footer class="l-footer">
       <div class="p-footer">
-        <p class="p-footer__copyright">copy</p>
+        <p class="p-footer__copyright">
+          Copyright Issei Kondo all rights resrved.
+        </p>
       </div>
     </footer>
 
-    <div class="p-to-top">
-      <p>top</p>
-    </div>
+    <a class="p-to-top" href="#">
+      <!-- <i class="p-to-top__icon fas fa-angle-up"></i> -->
+    </a>
+
     <!-- footer end -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="./js/custom.js"></script>
