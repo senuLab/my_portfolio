@@ -57,8 +57,38 @@ $(function(){
             nav.toggleClass("active");
             $(".js-trigger").find(".js-trigger-part").toggleClass('active');
         }
+
+        $('body').css('position', 'static');
+    $('body').css('overflow', 'scroll');
+    $('body').css('overflow-y', 'scroll');
+
+
+    let header = $(".l-header").innerHeight(); 
+    let id = $(this).attr("href");
+    let position = $(id).offset().top - header;
+    
+    $('body,html').animate({
+      scrollTop: position
+    }, 500);
+
+    console.log("scroll");
+
         return false;
     }); 
+
+
+  //トップへスクロール
+  $('.js-to-top').on("click",function () {
+
+    let header = $(".l-header").innerHeight(); 
+    let id = $(this).attr("href");
+    let position = $(id).offset().top - header;
+    
+    $('body,html').animate({
+      scrollTop: position
+    }, 500);
+    return false;
+  });
 
     const randomness = 100, // 振れ幅（例：90の場合は0〜90の値になる）
 		  threshold = 200; // 元のサイズ
