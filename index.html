@@ -79,15 +79,15 @@
           />
         </div>
         <div class="p-about__message">
-          <p>
+          <p class="p-about__introduction">
             ご訪問いただきありがとうございます。<br />
             近藤一晟と申します。岩手大学院で情報工学を専攻し、2020年3月に修了。現在はweb制作活動をしています。
           </p>
           <br />
-          <p>保有資格</p>
-          <ul>
-            <li>応用情報技術者</li>
-            <li>TOEI875点</li>
+          <p class="p-about__qualification-title">保有資格</p>
+          <ul class="p-about__qualification-items">
+            <li class="p-about__qualification-item">応用情報技術者</li>
+            <li class="p-about__qualification-item">TOEI875点</li>
           </ul>
         </div>
       </div>
@@ -100,27 +100,41 @@
       <div class="p-skill__container">
         <div class="p-skill__wrap">
           <p class="p-skill__kind">markup</p>
-          <div class="p-skill__item">
-            <i class="skill-icon fab fa-html5"></i>
-            <p class="skill-name">HTML</p>
-          </div>
-          <div class="p-skill__item">
-            <i class="skill-icon fab fa-html5"></i>
-            <p class="skill-name">HTML</p>
+          <div class="p-skill__items">
+            <div class="p-skill__item">
+              <i class="p-skill__icon fab fa-html5"></i>
+              <p class="p-skill__name">HTML</p>
+            </div>
+            <div class="p-skill__item">
+              <i class="p-skill__icon fab fa-html5"></i>
+              <p class="p-skill__name">HTML</p>
+            </div>
+            <div class="p-skill__item">
+              <i class="p-skill__icon fab fa-html5"></i>
+              <p class="p-skill__name">HTML</p>
+            </div>
+            <div class="p-skill__item">
+              <i class="p-skill__icon fab fa-html5"></i>
+              <p class="p-skill__name">HTML</p>
+            </div>
           </div>
         </div>
         <div class="p-skill__wrap">
           <p class="p-skill__kind">programming</p>
-          <div class="p-skill__item">
-            <i class="skill-icon fab fa-html5"></i>
-            <p class="skill-name">HTML</p>
+          <div class="p-skill__items">
+            <div class="p-skill__item">
+              <i class="p-skill__icon fab fa-html5"></i>
+              <p class="p-skill__name">HTML</p>
+            </div>
           </div>
         </div>
         <div class="p-skill__wrap">
           <p class="p-skill__kind">tool</p>
-          <div class="p-skill__item">
-            <i class="skill-icon fab fa-html5"></i>
-            <p class="skill-name">HTML</p>
+          <div class="p-skill__items">
+            <div class="p-skill__item">
+              <i class="p-skill__icon fab fa-html5"></i>
+              <p class="p-skill__name">HTML</p>
+            </div>
           </div>
         </div>
       </div>
@@ -132,17 +146,44 @@
       <h2 class="p-work__title c-title">Work</h2>
       <div class="p-work__wrap">
         <div class="p-work__item">
-          <!-- <img src="./img/work.jpg" alt="" class="c-img" /> -->
+          <a href="#" class="p-work__link">
+            <img src="./img/work.jpg" alt="" class="p-work__img c-img" />
+          </a>
           <h3 class="p-work__introduction">妹のサイト</h3>
           <p class="p-work__description">
-            デザインからコーディングまで行いました
+            デザインからコーディングまで行いました<br />
           </p>
         </div>
-      </div>
-      <div class="p-work__item">
-        <img src="" alt="" class="c-img" />
-        <h3 class="p-work__introduction"></h3>
-        <p class="p-work__description"></p>
+
+        <div class="p-work__item">
+          <a href="#" class="p-work__link">
+            <img src="./img/work.jpg" alt="" class="p-work__img c-img" />
+          </a>
+          <h3 class="p-work__introduction">ももどり</h3>
+          <p class="p-work__description">
+            ドメイン取得→webサイト公開→リンクにする
+          </p>
+        </div>
+
+        <div class="p-work__item">
+          <a href="#" class="p-work__link">
+            <img src="./img/work.jpg" alt="" class="p-work__img c-img" />
+          </a>
+          <h3 class="p-work__introduction">ももどり</h3>
+          <p class="p-work__description">
+            ドメイン取得→webサイト公開→リンクにする
+          </p>
+        </div>
+
+        <div class="p-work__item">
+          <a href="#" class="p-work__link">
+            <img src="./img/work.jpg" alt="" class="p-work__img c-img" />
+          </a>
+          <h3 class="p-work__introduction">ももどり</h3>
+          <p class="p-work__description">
+            ドメイン取得→webサイト公開→リンクにする
+          </p>
+        </div>
       </div>
     </section>
     <!-- work end -->
@@ -151,15 +192,41 @@
     <section class="p-contact">
       <h2 class="p-contact__title c-title">Contact</h2>
       <form action="">
-        <label class="p-contact__label">Name</label>
-        <input type="text" class="p-contact__input" />
-        <label class="p-contact__label">Kana</label>
-        <input type="text" class="p-contact__input" />
-        <label class="p-contact__label">E-mail</label>
-        <input type="email" class="p-contact__input" />
-        <label class="p-contact__label">Message</label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <button class="c-btn c-btn--red">Submit</button>
+        <div class="p-contact__item">
+          <div class="p-contact__input-wrap">
+            <label class="p-contact__label">Name</label>
+            <input type="text" class="p-contact__input" />
+          </div>
+          <p class="p-contact__example">ex)山田太郎</p>
+        </div>
+        <div class="p-contact__item">
+          <div class="p-contact__input-wrap">
+            <label class="p-contact__label">Kana</label>
+            <input type="text" class="p-contact__input" />
+          </div>
+          <p class="p-contact__example">ex)ヤマダタロウ</p>
+        </div>
+        <div class="p-contact__item">
+          <div class="p-contact__input-wrap">
+            <label class="p-contact__label">E-mail</label>
+            <input type="email" class="p-contact__input" />
+          </div>
+          <p class="p-contact__example">ex)yamada@contact.com</p>
+        </div>
+        <div class="p-contact__item">
+          <div class="p-contact__input-wrap">
+            <label class="p-contact__label">Message</label>
+            <textarea
+              class="p-contact__input p-contact__input--textarea"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+            >
+            </textarea>
+          </div>
+        </div>
+        <button class="p-contact__btn c-btn c-btn--red">Submit</button>
       </form>
     </section>
     <!-- contact end -->
