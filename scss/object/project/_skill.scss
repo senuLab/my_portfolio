@@ -1,6 +1,10 @@
 .p-skill {
-  padding: 10rem 0;
+  padding: 10rem 2rem;
   background-color: $color-cream;
+
+  @include mq("pc") {
+    //padding: 10rem 0rem;
+  }
 
   &__title {
     position: relative;
@@ -23,18 +27,83 @@
   }
 
   &__container {
+    display: flex;
+    flex-direction: column;
+
     @include mq("pc") {
-      display: flex;
-      width: 70rem;
-      margin: 0 auto;
+      flex-direction: row;
     }
   }
 
   &__wrap {
+    width: 100%;
+    text-align: center;
+
+    @include mq("pc") {
+      width: 22rem;
+    }
+
     &:nth-child(2) {
       @include mq("pc") {
         margin: 0 auto;
       }
     }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__kind {
+    margin-bottom: 2rem;
+
+    @include mq("pc") {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__items {
+    margin: 0 auto 4rem;
+    width: 22rem;
+
+    @include mq("pc") {
+      margin: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    background-color: red;
+    border-radius: 50%;
+
+    &:not(:nth-last-child(n + 1):nth-last-child(-n + 2)) {
+      margin-bottom: 1rem;
+    }
+
+    &:nth-child(2n + 1) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    color: $color-gray;
+  }
+
+  &__name {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $color-gray;
   }
 }

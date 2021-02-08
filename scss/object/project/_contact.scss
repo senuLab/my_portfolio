@@ -25,4 +25,72 @@
       font-size: 4rem;
     }
   }
+
+  &__item {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 60rem;
+
+    @include mq("pc") {
+      //display: flex;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+
+    &:last-child {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__input-wrap {
+    @include mq("pc") {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    width: 7rem;
+
+    @include mq("pc") {
+      margin: 0;
+      margin-right: 5rem;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 4rem;
+
+    @include mq("pc") {
+      width: calc(100% - 12rem);
+    }
+
+    &--textarea {
+      width: 100%;
+      height: 100%;
+      max-height: 10rem;
+      resize: none;
+
+      @include mq("pc") {
+        max-height: 15rem;
+      }
+    }
+  }
+
+  &__example {
+    margin-top: 0.5rem;
+
+    @include mq("pc") {
+      margin-left: 12rem;
+    }
+  }
+
+  &__btn {
+    margin: 0 auto;
+  }
 }

@@ -37,8 +37,8 @@
   &__img-wrap {
     position: relative;
     margin: 0 auto 4rem;
-    width: 20rem;
-    height: 20rem;
+    width: 30rem;
+    height: 30rem;
     background: radial-gradient(
       ellipse at center,
       rgba(225, 230, 243, 0.75) 0%,
@@ -49,7 +49,7 @@
     @include mq("pc") {
       flex-basis: 30rem;
       margin: 0 5rem 0 0;
-      //width: 25rem;
+      width: 30rem;
       height: 30rem;
     }
   }
@@ -66,5 +66,18 @@
     flex-direction: column;
     justify-content: center;
     flex-basis: 35rem;
+  }
+
+  &__qualification-item {
+    position: relative;
+    padding-left: 2rem;
+
+    &::before {
+      content: "・";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
   }
 }
