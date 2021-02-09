@@ -3,7 +3,7 @@ $breakpoints: (
   "pc": "screen and (min-width: 768px)",
   //"sp": "screen and (max-width: 520px)",
   //"tab": "screen and (min-width: 519px)",
-  //"pc": "screen and (min-width: 959px)",,
+  //"pc": "screen and (min-width: 959px)",,,,,,
 ) !default;
 
 $layers: (
@@ -22,3 +22,5 @@ $color-cream: #f7f6e7;
 $color-orange: #dcad81;
 $color-blue: #5c7f9e;
 $color-green: #6ca475;
+
+$item-width: 8rem;
