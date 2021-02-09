@@ -18,11 +18,16 @@
     &::before {
       position: absolute;
       content: "C";
-      top: -2rem;
-      left: -1.5rem;
+      top: -2.3rem;
+      left: -1.8rem;
       z-index: -1;
       color: $color-pink;
-      font-size: 4rem;
+      opacity: 0.5;
+      font-size: 5rem;
+
+      @include mq("pc") {
+        font-size: 5.6rem;
+      }
     }
   }
 
@@ -65,6 +70,8 @@
   &__input {
     width: 100%;
     height: 4rem;
+    border: 0.2rem solid rgb(120, 120, 120);
+    border-radius: 0.5rem;
 
     @include mq("pc") {
       width: calc(100% - 12rem);
@@ -84,6 +91,7 @@
 
   &__example {
     margin-top: 0.5rem;
+    color: rgba(0, 0, 0, 0.6);
 
     @include mq("pc") {
       margin-left: 12rem;
@@ -92,5 +100,6 @@
 
   &__btn {
     margin: 0 auto;
+    outline: none;
   }
 }

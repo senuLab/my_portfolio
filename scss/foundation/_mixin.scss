@@ -20,3 +20,11 @@
     @content;
   }
 }
+
+@mixin flex-fitting($column-width, $max-column) {
+  @for $i from 1 through $max-column {
+    @media only screen and (min-width: $i * $item-width) {
+      max-width: $i * $item-width;
+    }
+  }
+}
