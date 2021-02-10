@@ -153,9 +153,30 @@ $(function(){
           }
     
         }
-      };    
+      };   
+      
+      let form = $(".js-form");
 
-	// 流体アニメーション関数を実行
-	//fluid();
+      form.submit(function(e) { 
+        $.ajax({ 
+         url: form.attr('action'), 
+         data: form.serialize(), 
+         type: "POST", 
+         dataType: "xml", 
+         statusCode: { 
+            0: function() { 
+              //送信に成功したときの処理 
+              form.slideUp();
+              $(".js-success").slideDown();
+            }, 
+            200: function() { 
+              //送信に失敗したときの処理 
+              form.slideUp();
+              $(".js-error").slideDown();
+            } 
+          } 
+        });
+        return false; 
+      }); 
     
 });

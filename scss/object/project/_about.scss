@@ -100,7 +100,9 @@
     line-height: 2rem;
 
     &::before {
-      content: "・";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 700;
+      content: "\f00c";
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
