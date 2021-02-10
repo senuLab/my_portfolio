@@ -92,7 +92,7 @@
 
     &--one {
       @include flex-fitting(8rem, 1);
-      margin: 0 auto !important;
+      //margin: 0 auto !important;
     }
 
     &--three {
@@ -155,7 +155,7 @@
 
   &__icon {
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 3rem;
@@ -174,7 +174,7 @@
 
   &__name {
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 1rem;

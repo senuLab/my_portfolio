@@ -18,9 +18,9 @@
   </head>
   <body>
     <!-- loading start -->
-    <div class="p-load">
+    <!-- <div class="p-load">
       <p class="p-load__message">senuLab</p>
-    </div>
+    </div> -->
     <!-- loading end -->
 
     <!-- header start -->
@@ -212,7 +212,7 @@
           </a>
           <h3 class="p-work__introduction">架空のコーポレートサイト</h3>
           <p class="p-work__description">
-            架空のコーポーレートサイトのLPです。デザインカンプデータからコーディングを行いました。レスポンシブ対応しています。
+            架空のコーポーレートサイトのLPです。デザインカンプデータからのコーディングを行いました。レスポンシブ対応しています。
           </p>
         </div>
 
@@ -222,7 +222,7 @@
           </a>
           <h3 class="p-work__introduction">ポートフォリオサイト</h3>
           <p class="p-work__description">
-            現在ご覧いただいているサイトです。デザインから考えてコーディングを行いました。
+            現在ご覧いただいているサイトです。デザインから考えてコーディングを行いました。コンタクトフォームはGoogleフォームに紐づけています。
           </p>
         </div>
       </div>
@@ -230,27 +230,44 @@
     <!-- work end -->
 
     <!-- contact start -->
-    <section class="p-contact" id="a-contact">
+    <section class="p-contact" id="a-contact" name="entry.">
       <h2 class="p-contact__title c-title">Contact</h2>
-      <form action="">
+      <form
+        method="POST"
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd_IRQtKEPcraLMWIWucAe2DBPMIb0iWJErW7FjZQUw7DyOEg/formResponse"
+        class="js-form"
+        target="dummyIframe"
+      >
         <div class="p-contact__item">
           <div class="p-contact__input-wrap">
             <label class="p-contact__label">Name</label>
-            <input type="text" class="p-contact__input" />
+            <input
+              type="text"
+              class="p-contact__input"
+              name="entry.775375003"
+            />
           </div>
           <p class="p-contact__example">ex)山田太郎</p>
         </div>
         <div class="p-contact__item">
           <div class="p-contact__input-wrap">
             <label class="p-contact__label">Kana</label>
-            <input type="text" class="p-contact__input" />
+            <input
+              type="text"
+              class="p-contact__input"
+              name="entry.355693714"
+            />
           </div>
           <p class="p-contact__example">ex)ヤマダタロウ</p>
         </div>
         <div class="p-contact__item">
           <div class="p-contact__input-wrap">
             <label class="p-contact__label">E-mail</label>
-            <input type="email" class="p-contact__input" />
+            <input
+              type="email"
+              class="p-contact__input"
+              name="entry.1940204853"
+            />
           </div>
           <p class="p-contact__example">ex)yamada@contact.com</p>
         </div>
@@ -261,11 +278,23 @@
               class="p-contact__input p-contact__input--textarea"
               cols="30"
               rows="10"
+              name="entry.1483884721"
             ></textarea>
           </div>
         </div>
         <button class="p-contact__btn c-btn c-btn--red">Submit</button>
       </form>
+      <iframe class="p-contact__dummy" name="dummyIframe"></iframe>
+      <div class="p-contact__message js-success">
+        <p class="p-contact__message--success">
+          送信完了しました。ありがとうございました。
+        </p>
+      </div>
+      <div class="p-contact__message js-error">
+        <p class="p-contact__message--error">
+          送信に失敗しました。ページを更新して再度送信してください。
+        </p>
+      </div>
     </section>
     <!-- contact end -->
 
