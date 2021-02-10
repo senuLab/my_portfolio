@@ -48,7 +48,7 @@ $(function(){
         return false;
     });
 
-    $(".js-link, .js-btn").on("click",function(){
+    $(".js-link, .js-btn, .js-to-top, .js-logo-link").on("click",function(){
         var nav = $(".p-nav.js-nav");
         $("body").css("overflow", "scroll");
         
@@ -85,7 +85,7 @@ $(function(){
 
 
   //トップへスクロール
-  $('.js-to-top').on("click",function () {
+  /* $('.js-to-top').on("click",function () {
 
     let header = $(".l-header").innerHeight(); 
 
@@ -96,7 +96,7 @@ $(function(){
       scrollTop: position
     }, 500);
     return false;
-  });
+  }); */
 
     const randomness = 100, // 振れ幅（例：90の場合は0〜90の値になる）
 		  threshold = 200; // 元のサイズ

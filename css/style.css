@@ -487,12 +487,23 @@ body {
 }
 
 .p-header__logo {
+  /* margin: auto 0;
+    margin-right: auto;
+    padding: 0.8rem 0;
+    height: 4rem;
+    width: 9rem;
+    transition: all 0.3s; */
+  width: 100%;
+}
+
+.p-header__logo-link {
+  display: block;
   width: 9rem;
   height: 4rem;
   margin: auto 0;
   margin-right: auto;
   padding: 0.8rem 0;
-  transition: all 0.3s;
+  cursor: pointer;
 }
 
 .p-load {
@@ -775,12 +786,13 @@ body {
   position: fixed;
   right: 3rem;
   bottom: 3rem;
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border: 0.1rem solid #dd98a5;
   border-radius: 3px;
   background-color: #dd98a5;
   text-align: center;
+  cursor: pointer;
   transition: all 0.5s;
 }
 
@@ -796,7 +808,7 @@ body {
   content: "\f106";
   color: #fff;
   font-weight: 900;
-  font-size: 25px;
+  font-size: 3.5rem;
   font-family: "Font Awesome 5 Free";
   text-align: center;
 }
@@ -804,7 +816,7 @@ body {
 .p-top {
   position: relative;
   height: auto;
-  background: url(./../../../img/header-bg.jpg) no-repeat center center/cover;
+  background: url(.//img/header-bg.jpg) no-repeat center center/cover;
 }
 
 .p-top__overlay {
@@ -886,20 +898,13 @@ body {
 
 .p-work__img {
   margin-bottom: 1rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .p-work__introduction {
   margin-bottom: 2rem;
   font-size: 2.4rem;
   text-align: center;
-  /* @include mq("pc") {
-      font-size: 2.8rem;
-    } */
-}
-
-.p-work__description {
-  line-height: 2rem;
 }
 
 .stickyadd__header {
