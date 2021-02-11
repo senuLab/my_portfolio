@@ -92,7 +92,7 @@
 
     &--one {
       @include flex-fitting(8rem, 1);
-      //margin: 0 auto !important;
+      margin: 0 auto 4rem !important;
     }
 
     &--three {

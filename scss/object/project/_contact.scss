@@ -60,6 +60,7 @@
     display: inline-block;
     margin-bottom: 0.5rem;
     width: 7rem;
+    font-weight: bold;
 
     @include mq("pc") {
       margin: 0;
