@@ -78,6 +78,22 @@
     }
   }
 
+  &__link--current {
+    color: $color-pink !important;
+
+    /* &::after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+      width: 0;
+      height: 0.2rem;
+      background-color: $color-pink;
+      transition: all 0.3s;
+    } */
+  }
+
   &__trigger {
     position: relative;
     z-index: 4;
