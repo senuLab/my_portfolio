@@ -47,7 +47,6 @@
     box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
 
     &::after {
-      //display: none;
       position: absolute;
       top: 0;
       left: 0;
@@ -64,7 +63,9 @@
     }
 
     &:hover::after {
-      opacity: 1;
+      @include mq("pc") {
+        opacity: 1;
+      }
     }
   }
 
@@ -92,7 +93,11 @@
   &__img {
     position: relative;
     border-radius: 1rem;
-    height: 15rem;
+    height: auto;
+
+    @include mq("pc") {
+      height: 15rem;
+    }
   }
 
   &__introduction {

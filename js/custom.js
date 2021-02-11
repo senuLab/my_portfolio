@@ -1,12 +1,24 @@
 $(function(){
+
+    let form = $(".js-form");
+    let link = $('.js-link')
+    let header = $(".js-header");
+    let logo = $('.js-logo');
+    let logo_dark = $('.js-logo--dark');
+    let trigger_part = $('.js-trigger-part');
+    let nav = $('.js-nav');
+    let set = 150;
+    let boxTop = new Array;
+    let current = -1;
+    let nav_link_current = 'p-nav__link--current';
+
+    $('.js-section').each(function (i) {
+        boxTop[i] = $(this).offset().top;
+    });
+
     $(window).on('scroll',function() {
-        var scroll = $(window).scrollTop();
-        var link = $('.js-link')
-        var header = $(".js-header");
-        var logo = $('.js-logo');
-        var logo_dark = $('.js-logo--dark');
-        var trigger_part = $('.js-trigger-part');
-        var nav = $('.js-nav');
+        let scroll = $(window).scrollTop();
+        let nav = $('.js-nav');
 
         if (scroll >= 50) {
             header.addClass("stickyadd__header");
@@ -29,11 +41,30 @@ $(function(){
         } else {
             $('.p-to-top').fadeOut();
         }
+
+        if(scroll < 200){
+            $('.p-nav__link').removeClass(nav_link_current);
+        }
+
+        if(scroll > 200 && scroll < 250){
+            changeBox(0);
+            console.log("70");
+            current = -1;
+        }
+
+        if(scroll > 250){
+            for (var i = boxTop.length - 1; i >= 0; i--) {
+                if (scroll > boxTop[i] - set ) {
+                changeBox(i);
+                break;
+            }
+            }
+        }
     });
 
 
     $('.js-trigger').on('click', function() {
-        var nav = $(".p-nav.js-nav");
+        let nav = $(".p-nav.js-nav");
         $(this).find(".js-trigger-part").toggleClass('active');
     
         if(nav.hasClass("active")){
@@ -49,7 +80,7 @@ $(function(){
     });
 
     $(".js-link, .js-btn, .js-to-top, .js-logo-link").on("click",function(){
-        var nav = $(".p-nav.js-nav");
+        let nav = $(".p-nav.js-nav");
         $("body").css("overflow", "scroll");
         
         if(nav.hasClass("active")){
@@ -62,7 +93,7 @@ $(function(){
         $('body').css('overflow', 'scroll');
         $('body').css('overflow-y', 'scroll');
 
-        var scroll = $(window).scrollTop();
+        let scroll = $(window).scrollTop();
         let header = 0;
 
         if (scroll < 50) {
@@ -82,45 +113,28 @@ $(function(){
 
         return false;
     }); 
-
-
-    var set = 200;//ウインドウ上部からどれぐらいの位置で変化させるか
-    var boxTop = new Array;
-    var current = -1;
-    //各要素の位置
-    //position-nowは場所を取得したい対象の要素に付ける
         
 
     const changeBox = function(secNum) {
         if (secNum != current) {
           current = secNum;
-          secNum2 = secNum + 1;//以下にクラス付与したい要素名と付与したいクラス名
-          $('.nav-global li a').removeClass('link-current');
-    
-          //位置によって個別に処理をしたい場合　
+          secNum2 = secNum + 1;
+          $('.p-nav__link').removeClass(nav_link_current);
+
           if (current == 0) {
-            $('#top_link_js').addClass('link-current');
-            // 現在地がsection1の場合の処理
-          } else if (current == 1) {
-            $('#about_link_js').addClass('link-current');
-            // 現在地がsection2の場合の処理
-          } else if (current == 2) {
-            // 現在地がsection3の場合の処理
-            $('#business_link_js').addClass('link-current');
+            $('.js-about-link').addClass(nav_link_current);
+          } 
+          else if (current == 1) {
+            $('.js-skill-link').addClass(nav_link_current);
+          } 
+          else if (current == 2) {
+            $('.js-work-link').addClass(nav_link_current);
           }
           else if (current == 3) {
-            // 現在地がsection4の場合の処理
-            $('#access_link_js').addClass('link-current');
+            $('.js-contact-link').addClass(nav_link_current);
           }
-          else if (current == 4) {
-            // 現在地がsection4の場合の処理
-            $('#contact_link_js').addClass('link-current');
-          }
-    
         }
-      };   
-      
-      let form = $(".js-form");
+      }; 
 
       form.submit(function(e) { 
         $.ajax({ 
