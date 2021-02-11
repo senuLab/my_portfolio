@@ -78,46 +78,11 @@ $(function(){
     
         $('body,html').animate({
             scrollTop: position
-        }, 500);
+        }, 600);
 
         return false;
     }); 
 
-
-  //トップへスクロール
-  /* $('.js-to-top').on("click",function () {
-
-    let header = $(".l-header").innerHeight(); 
-
-    let id = $(this).attr("href");
-    let position = $(id).offset().top - header;
-    
-    $('body,html').animate({
-      scrollTop: position
-    }, 500);
-    return false;
-  }); */
-
-    const randomness = 100, // 振れ幅（例：90の場合は0〜90の値になる）
-		  threshold = 200; // 元のサイズ
-	const randomness02 = 100, // 振れ幅（例：90の場合は0〜90の値になる）
-		  threshold02 = 200; // 元のサイズ
-
-
-	// 流体アニメーション関数を定義
-	/* const fluid = function () {
-
-		// animate関数を使用
-		$('.p-about__img-wrap').animate({
-			borderTopLeftRadius: String(Math.round((Math.random() * randomness02 + threshold02)) + 'px'),
-			borderTopRightRadius: String(Math.round((Math.random() * randomness + threshold)) + 'px'),
-			borderBottomLeftRadius: String(Math.round((Math.random() * randomness + threshold)) + 'px'),
-			borderBottomRightRadius: String(Math.round((Math.random() * randomness02 + threshold02)) + 'px'),
-		}, {
-			duration: 900,　//形が変わる速さ
-			complete: fluid　//繰り返し
-		});
-	} */
 
     var set = 200;//ウインドウ上部からどれぐらいの位置で変化させるか
     var boxTop = new Array;
