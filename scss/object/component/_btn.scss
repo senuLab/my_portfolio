@@ -1,4 +1,5 @@
 .c-btn {
+  position: relative;
   padding: 1rem 3rem;
   border: 0.4rem solid white;
   border-radius: 3rem;
@@ -6,6 +7,7 @@
   color: white;
   font-weight: bold;
   cursor: pointer;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
   transition: all 0.3s;
 
   @include mq("pc") {
@@ -14,9 +16,32 @@
     font-size: 2rem;
   }
 
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 1.4rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    transform: translateY(-35%) rotate(-45deg);
+    border-right: 0.2rem solid white;
+    border-bottom: 0.2rem solid white;
+    transition: all 0.3s;
+
+    @include mq("pc") {
+      right: 1.6rem;
+    }
+  }
+
   &:hover {
     color: black;
     background-color: white;
+
+    &::after {
+      border-right: 0.2rem solid black;
+      border-bottom: 0.2rem solid black;
+    }
   }
 
   &--red {
@@ -31,6 +56,11 @@
     &:hover {
       color: $color-pink;
       background-color: white;
+
+      &::after {
+        border-right: 0.2rem solid $color-pink;
+        border-bottom: 0.2rem solid $color-pink;
+      }
     }
   }
 }

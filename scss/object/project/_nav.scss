@@ -37,7 +37,7 @@
 
   &__item {
     width: fit-content;
-    margin: 1.5rem auto;
+    margin: 2rem auto;
 
     @include mq("pc") {
       margin: 0;
@@ -48,12 +48,16 @@
   &__link {
     display: block;
     position: relative;
+    font-size: 2rem;
+    font-weight: bold;
     transition: all 0.3s;
 
     @include mq("pc") {
       margin: 0 1.5rem;
       padding: 0.8rem 0;
       height: 4rem;
+      font-size: 1.8rem;
+      font-weight: 400;
       line-height: 2.4rem;
     }
 
@@ -80,18 +84,6 @@
 
   &__link--current {
     color: $color-pink !important;
-
-    /* &::after {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      content: "";
-      width: 0;
-      height: 0.2rem;
-      background-color: $color-pink;
-      transition: all 0.3s;
-    } */
   }
 
   &__trigger {

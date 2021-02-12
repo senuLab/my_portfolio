@@ -7,10 +7,18 @@ $(function(){
     let logo_dark = $('.js-logo--dark');
     let trigger_part = $('.js-trigger-part');
     let nav = $('.js-nav');
-    let set = 150;
     let boxTop = new Array;
     let current = -1;
     let nav_link_current = 'p-nav__link--current';
+
+    let set = 160;
+
+    if (window.matchMedia( "(max-width: 768px)" ).matches) {
+        set = 160;
+    } 
+    else {
+        set = 170;
+    }
 
     $('.js-section').each(function (i) {
         boxTop[i] = $(this).offset().top;
@@ -48,7 +56,6 @@ $(function(){
 
         if(scroll > 200 && scroll < 250){
             changeBox(0);
-            console.log("70");
             current = -1;
         }
 
