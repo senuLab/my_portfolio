@@ -24,6 +24,10 @@ $(function(){
         boxTop[i] = $(this).offset().top;
     });
 
+    function handleTouchMove(event) {
+        event.preventDefault();
+      }
+
     $(window).on('scroll',function() {
         let scroll = $(window).scrollTop();
         let nav = $('.js-nav');
@@ -76,11 +80,15 @@ $(function(){
     
         if(nav.hasClass("active")){
             nav.fadeOut();
+            $("html").css("overflow", "hidden");
             $("body").css("overflow", "scroll");
+            document.removeEventListener('touchmove', handleTouchMove, {passive: false});
         }
         else{
             nav.fadeIn();
+            $("html").css("overflow", "hidden");
             $("body").css("overflow", "hidden");
+            document.addEventListener('touchmove', handleTouchMove, {passive: false});
         }
         nav.toggleClass("active");
         return false;
@@ -88,7 +96,6 @@ $(function(){
 
     $(".js-link, .js-btn, .js-to-top, .js-logo-link").on("click",function(){
         let nav = $(".p-nav.js-nav");
-        $("body").css("overflow", "scroll");
         
         if(nav.hasClass("active")){
             nav.fadeOut();
@@ -96,9 +103,9 @@ $(function(){
             $(".js-trigger").find(".js-trigger-part").toggleClass('active');
         }
 
-        $('body').css('position', 'static');
+        $("html").css("overflow", "scroll");
         $('body').css('overflow', 'scroll');
-        $('body').css('overflow-y', 'scroll');
+        document.removeEventListener('touchmove', handleTouchMove, {passive: false});
 
         let scroll = $(window).scrollTop();
         let header = 0;
@@ -124,45 +131,45 @@ $(function(){
 
     const changeBox = function(secNum) {
         if (secNum != current) {
-          current = secNum;
-          secNum2 = secNum + 1;
-          $('.p-nav__link').removeClass(nav_link_current);
+            current = secNum;
+            secNum2 = secNum + 1;
+            $('.p-nav__link').removeClass(nav_link_current);
 
-          if (current == 0) {
-            $('.js-about-link').addClass(nav_link_current);
-          } 
-          else if (current == 1) {
-            $('.js-skill-link').addClass(nav_link_current);
-          } 
-          else if (current == 2) {
-            $('.js-work-link').addClass(nav_link_current);
-          }
-          else if (current == 3) {
-            $('.js-contact-link').addClass(nav_link_current);
-          }
+            if (current == 0) {
+                $('.js-about-link').addClass(nav_link_current);
+            } 
+            else if (current == 1) {
+                $('.js-skill-link').addClass(nav_link_current);
+            } 
+            else if (current == 2) {
+                $('.js-work-link').addClass(nav_link_current);
+            }
+            else if (current == 3) {
+                $('.js-contact-link').addClass(nav_link_current);
+            }
         }
-      }; 
+    }; 
 
-      form.submit(function(e) { 
+    form.submit(function(e) { 
         $.ajax({ 
-         url: form.attr('action'), 
-         data: form.serialize(), 
-         type: "POST", 
-         dataType: "xml", 
-         statusCode: { 
-            0: function() { 
-              //送信に成功したときの処理 
-              form.slideUp();
-              $(".js-success").slideDown();
+            url: form.attr('action'), 
+            data: form.serialize(), 
+            type: "POST", 
+            dataType: "xml", 
+            statusCode: { 
+                0: function() { 
+                //送信に成功したときの処理 
+                form.slideUp();
+                $(".js-success").slideDown();
             }, 
             200: function() { 
-              //送信に失敗したときの処理 
-              form.slideUp();
-              $(".js-error").slideDown();
+                //送信に失敗したときの処理 
+                form.slideUp();
+                $(".js-error").slideDown();
             } 
-          } 
-        });
-        return false; 
-      }); 
+        } 
+    });
+    return false; 
+    }); 
     
 });
