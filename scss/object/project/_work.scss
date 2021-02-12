@@ -33,10 +33,15 @@
 
   &__wrap {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     width: fit-content;
     max-width: 89rem;
     margin: 0 auto;
+
+    @include mq("pc") {
+      flex-direction: row;
+    }
   }
 
   &__link {
@@ -71,6 +76,8 @@
 
   &__item {
     width: 100%;
+    max-width: 35rem;
+    margin: 0 auto;
 
     &:not(:last-child) {
       margin-bottom: 4rem;
@@ -79,6 +86,7 @@
     @include mq("pc") {
       width: calc((100% - 14rem) / 3);
       max-width: 25rem;
+      margin: 0;
 
       &:not(:nth-child(3n)) {
         margin-right: 7rem;
@@ -97,6 +105,7 @@
 
     @include mq("pc") {
       height: 15rem;
+      object-fit: cover;
     }
   }
 
