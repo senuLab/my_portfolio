@@ -80,7 +80,7 @@ $(function(){
     
         if(nav.hasClass("active")){
             nav.fadeOut();
-            $("html").css("overflow", "hidden");
+            $("html").css("overflow", "scroll");
             $("body").css("overflow", "scroll");
             document.removeEventListener('touchmove', handleTouchMove, {passive: false});
         }
