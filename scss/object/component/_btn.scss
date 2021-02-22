@@ -1,66 +1,66 @@
 .c-btn {
-  position: relative;
-  padding: 1rem 3rem;
-  border: 0.4rem solid white;
-  border-radius: 3rem;
-  background: transparent;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
-  transition: all 0.3s;
-
-  @include mq("pc") {
-    padding: 1.4rem 3.44rem;
+    position: relative;
+    padding: 1rem 3rem;
     border: 0.4rem solid white;
-    font-size: 2rem;
-  }
-
-  &::after {
-    display: block;
-    position: absolute;
-    content: "";
-    top: 50%;
-    right: 1.4rem;
-    width: 0.5rem;
-    height: 0.5rem;
-    transform: translateY(-35%) rotate(-45deg);
-    border-right: 0.2rem solid white;
-    border-bottom: 0.2rem solid white;
+    border-radius: 3rem;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
 
     @include mq("pc") {
-      right: 1.6rem;
+        padding: 1.4rem 3.44rem;
+        border: 0.4rem solid white;
+        font-size: 2rem;
     }
-  }
-
-  &:hover {
-    color: black;
-    background-color: white;
 
     &::after {
-      border-right: 0.2rem solid black;
-      border-bottom: 0.2rem solid black;
-    }
-  }
+        display: block;
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: 1.4rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        transform: translateY(-50%) rotate(-45deg);
+        border-right: 0.2rem solid white;
+        border-bottom: 0.2rem solid white;
+        transition: all 0.3s;
 
-  &--red {
-    @extend .c-btn;
-    border: 0.4rem solid $color-pink;
-    background-color: $color-pink;
-
-    @include mq("pc") {
-      border: 0.4rem solid $color-pink;
+        @include mq("pc") {
+            right: 1.8rem;
+        }
     }
 
     &:hover {
-      color: $color-pink;
-      background-color: white;
+        color: black;
+        background-color: white;
 
-      &::after {
-        border-right: 0.2rem solid $color-pink;
-        border-bottom: 0.2rem solid $color-pink;
-      }
+        &::after {
+            border-right: 0.2rem solid black;
+            border-bottom: 0.2rem solid black;
+        }
     }
-  }
+
+    &--red {
+        @extend .c-btn;
+        border: 0.4rem solid $color-pink;
+        background-color: $color-pink;
+
+        @include mq("pc") {
+            border: 0.4rem solid $color-pink;
+        }
+
+        &:hover {
+            color: $color-pink;
+            background-color: white;
+
+            &::after {
+                border-right: 0.2rem solid $color-pink;
+                border-bottom: 0.2rem solid $color-pink;
+            }
+        }
+    }
 }
