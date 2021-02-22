@@ -1,336 +1,376 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
-      rel="stylesheet"
-    />
-    <!-- in your header -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css"
-    />
-    <title>senuLab</title>
-  </head>
-  <body>
-    <!-- loading start -->
-    <div class="p-load">
-      <p class="p-load__message">senuLab</p>
-    </div>
-    <!-- loading end -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link
+            href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+            rel="stylesheet"
+        />
+        <!-- in your header -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css"
+        />
+        <title>senuLab</title>
+    </head>
+    <body>
+        <!-- loading start -->
+        <!-- <div class="p-load">
+            <p class="p-load__message">senuLab</p>
+        </div> -->
+        <!-- loading end -->
 
-    <!-- header start -->
-    <header class="l-header js-header">
-      <div class="p-header">
-        <a class="p-header__logo-link js-logo-link" href="#a-top">
-          <img class="p-header__logo js-logo" src="./img/logo.png" alt="" />
-          <img
-            class="p-header__logo js-logo--dark stickyadd__logo--hide"
-            src="./img/logo-dark.png"
-            alt=""
-          />
+        <!-- header start -->
+        <header class="l-header js-header">
+            <div class="p-header">
+                <a class="p-header__logo-link js-logo-link" href="#a-top">
+                    <img
+                        class="p-header__logo js-logo"
+                        src="./img/logo.png"
+                        alt=""
+                    />
+                    <img
+                        class="p-header__logo js-logo--dark stickyadd__logo--hide"
+                        src="./img/logo-dark.png"
+                        alt=""
+                    />
+                </a>
+                <nav class="p-nav js-nav">
+                    <ul class="p-nav__items">
+                        <li class="p-nav__item">
+                            <a
+                                href="#a-about"
+                                class="p-nav__link c-link js-link js-about-link"
+                                >About</a
+                            >
+                        </li>
+                        <li class="p-nav__item">
+                            <a
+                                href="#a-skill"
+                                class="p-nav__link c-link js-link js-skill-link"
+                                >Skill</a
+                            >
+                        </li>
+                        <li class="p-nav__item">
+                            <a
+                                href="#a-work"
+                                class="p-nav__link c-link js-link js-work-link"
+                                >Work</a
+                            >
+                        </li>
+                        <li class="p-nav__item">
+                            <a
+                                href="#a-contact"
+                                class="p-nav__link c-link js-link js-contact-link"
+                            >
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="p-nav__trigger u-display--pc-none js-trigger">
+                    <span class="js-trigger-part p-nav__trigger-part"></span>
+                    <span class="js-trigger-part p-nav__trigger-part"></span>
+                    <span class="js-trigger-part p-nav__trigger-part"></span>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+
+        <!-- top-start -->
+        <section class="p-top" id="a-top">
+            <div class="p-top__overlay"></div>
+            <div class="p-top__content">
+                <h1 class="p-top__title c-title">senuLab</h1>
+                <p class="p-top__message">This is Issei's portfolio.</p>
+                <a href="#a-contact" class="p-top__btn c-btn js-btn">Contact</a>
+            </div>
+        </section>
+        <!-- top end -->
+
+        <!-- about start -->
+        <section class="p-about js-section" id="a-about">
+            <h2 class="p-about__title c-title">About</h2>
+            <div class="fluid rotate gradation"></div>
+            <div class="p-about__content">
+                <div class="p-about__img-wrap">
+                    <img
+                        src="./img/アイコン.png"
+                        alt=""
+                        class="p-about__img c-img__icon"
+                    />
+                </div>
+                <div class="p-about__message">
+                    <p class="p-about__introduction">
+                        ご訪問いただきありがとうございます。<br />
+                        近藤一晟と申します。岩手大学院で情報工学を専攻し、2020年3月に修了。現在はweb制作・マーケティングを学んでいます。
+                    </p>
+                    <br />
+                    <p class="p-about__qualification-title">保有資格</p>
+                    <ul class="p-about__qualification-items">
+                        <li class="p-about__qualification-item">
+                            応用情報技術者
+                        </li>
+                        <li class="p-about__qualification-item">TOEI875点</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- about end -->
+
+        <!-- skill start -->
+        <section class="p-skill js-section" id="a-skill">
+            <h2 class="p-skill__title c-title">Skill</h2>
+            <div class="p-skill__container">
+                <div class="p-skill__wrap">
+                    <p class="p-skill__kind p-skill__kind--orange">Markup</p>
+                    <div class="p-skill__items p-skill__items--three">
+                        <div class="p-skill__item p-skill__item--orange">
+                            <i class="p-skill__icon fab fa-html5"></i>
+                            <p class="p-skill__name">HTML</p>
+                        </div>
+                        <div class="p-skill__item p-skill__item--orange">
+                            <i class="p-skill__icon fab fa-css3-alt"></i>
+                            <p class="p-skill__name">CSS</p>
+                        </div>
+                        <div class="p-skill__item p-skill__item--orange">
+                            <i class="p-skill__icon fab fa-sass"></i>
+                            <p class="p-skill__name">Sass</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-skill__wrap">
+                    <p class="p-skill__kind p-skill__kind--blue">Programming</p>
+                    <div class="p-skill__items p-skill__items--five">
+                        <div class="p-skill__item p-skill__item--blue">
+                            <i class="p-skill__icon fab fa-js"></i>
+                            <p class="p-skill__name">JavaScript</p>
+                        </div>
+                        <div class="p-skill__item p-skill__item--blue">
+                            <i class="p-skill__icon devicon-jquery-plain"></i>
+                            <p class="p-skill__name">jQuery</p>
+                        </div>
+                        <div class="p-skill__item p-skill__item--blue">
+                            <i
+                                class="p-skill__icon devicon-typescript-plain"
+                            ></i>
+                            <p class="p-skill__name">TypeScript</p>
+                        </div>
+                        <div class="p-skill__item p-skill__item--blue">
+                            <i class="p-skill__icon fab fa-python"></i>
+                            <p class="p-skill__name">Python</p>
+                        </div>
+                        <div class="p-skill__item p-skill__item--blue">
+                            <i
+                                class="p-skill__icon devicon-cplusplus-plain"
+                            ></i>
+                            <p class="p-skill__name">C++</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-skill__wrap">
+                    <p class="p-skill__kind p-skill__kind--green">Tool</p>
+                    <div class="p-skill__items p-skill__items--five">
+                        <div class="p-skill__item p-skill__item--green">
+                            <i class="p-skill__icon devicon-git-plain"></i>
+                            <p class="p-skill__name">Git</p>
+                        </div>
+                        <div class="p-skill__item p-skill__item--green">
+                            <i class="p-skill__icon fab fa-gulp"></i>
+                            <p class="p-skill__name">gulp</p>
+                        </div>
+                        <div class="p-skill__item p-skill__item--green">
+                            <i class="p-skill__icon devicon-xd-plain"></i>
+                            <p class="p-skill__name">Adobe XD</p>
+                        </div>
+                        <div class="p-skill__item p-skill__item--green">
+                            <i class="p-skill__icon fab fa-figma"></i>
+                            <p class="p-skill__name">Figma</p>
+                        </div>
+                        <div class="p-skill__item p-skill__item--green">
+                            <i class="p-skill__icon fab fa-slack"></i>
+                            <p class="p-skill__name">Slack</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-skill__wrap">
+                    <p class="p-skill__kind p-skill__kind--gray">Other</p>
+                    <div class="p-skill__items p-skill__items--two">
+                        <div class="p-skill__item p-skill__item--gray">
+                            <i class="p-skill__icon devicon-mysql-plain"></i>
+                            <p class="p-skill__name">MySQL</p>
+                        </div>
+                        <div class="p-skill__item p-skill__item--gray">
+                            <i class="p-skill__icon devicon-docker-plain"></i>
+                            <p class="p-skill__name">Docker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- skill end -->
+
+        <!-- work start -->
+        <section class="p-work js-section" id="a-work">
+            <h2 class="p-work__title c-title">Work</h2>
+            <div class="p-work__wrap">
+                <!-- <div class="p-work__item">
+                    <a href="#" class="p-work__link">
+                        <img
+                            src="./img/mock.jpg"
+                            alt=""
+                            class="p-work__img c-img"
+                        />
+                    </a>
+                    <h3 class="p-work__introduction">妹のサイト</h3>
+                    <p class="p-work__description">
+                        デザインからコーディングまで行いました<br />
+                    </p>
+                </div> -->
+
+                <div class="p-work__item">
+                    <a
+                        href="https://senulab.github.io/momodori"
+                        class="p-work__link"
+                    >
+                        <img
+                            src="./img/momodori.png"
+                            alt=""
+                            class="p-work__img c-img"
+                        />
+                    </a>
+                    <h3 class="p-work__introduction">ももどり駅前食堂様</h3>
+                    <p class="p-work__description">
+                        ドメイン取得→webサイト公開→リンクにする
+                    </p>
+                </div>
+
+                <div class="p-work__item">
+                    <a
+                        href="https://senulab.github.io/sample1_design_comp_base/"
+                        class="p-work__link"
+                    >
+                        <img
+                            src="./img/sample.png"
+                            alt=""
+                            class="p-work__img c-img"
+                        />
+                    </a>
+                    <h3 class="p-work__introduction">
+                        架空のコーポレートサイト
+                    </h3>
+                    <p class="p-work__description">
+                        架空のコーポーレートサイトのLPです。デザインカンプデータからのコーディングを行いました。レスポンシブ対応しています。
+                    </p>
+                </div>
+
+                <div class="p-work__item">
+                    <a
+                        href="https://senulab.github.io/my_portfolio"
+                        class="p-work__link"
+                    >
+                        <img
+                            src="./img/my-portfolio.png"
+                            alt=""
+                            class="p-work__img c-img"
+                        />
+                    </a>
+                    <h3 class="p-work__introduction">ポートフォリオサイト</h3>
+                    <p class="p-work__description">
+                        現在ご覧いただいているサイトです。デザインから考えてコーディングを行いました。コンタクトフォームはGoogleフォームに紐づけています。
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- work end -->
+
+        <!-- contact start -->
+        <section class="p-contact js-section" id="a-contact" name="entry.">
+            <h2 class="p-contact__title c-title">Contact</h2>
+            <form
+                method="POST"
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd_IRQtKEPcraLMWIWucAe2DBPMIb0iWJErW7FjZQUw7DyOEg/formResponse"
+                class="js-form"
+                target="dummyIframe"
+            >
+                <div class="p-contact__item">
+                    <div class="p-contact__input-wrap">
+                        <label class="p-contact__label">Name</label>
+                        <input
+                            type="text"
+                            class="p-contact__input"
+                            name="entry.775375003"
+                        />
+                    </div>
+                    <p class="p-contact__example">ex)山田太郎</p>
+                </div>
+                <div class="p-contact__item">
+                    <div class="p-contact__input-wrap">
+                        <label class="p-contact__label">Kana</label>
+                        <input
+                            type="text"
+                            class="p-contact__input"
+                            name="entry.355693714"
+                        />
+                    </div>
+                    <p class="p-contact__example">ex)ヤマダタロウ</p>
+                </div>
+                <div class="p-contact__item">
+                    <div class="p-contact__input-wrap">
+                        <label class="p-contact__label">E-mail</label>
+                        <input
+                            type="email"
+                            class="p-contact__input"
+                            name="entry.1940204853"
+                        />
+                    </div>
+                    <p class="p-contact__example">ex)yamada@contact.com</p>
+                </div>
+                <div class="p-contact__item">
+                    <div class="p-contact__input-wrap">
+                        <label class="p-contact__label">Message</label>
+                        <textarea
+                            class="p-contact__input p-contact__input--textarea"
+                            cols="30"
+                            rows="10"
+                            name="entry.1483884721"
+                        ></textarea>
+                    </div>
+                </div>
+                <button class="p-contact__btn c-btn c-btn--red">Submit</button>
+            </form>
+            <iframe class="p-contact__dummy" name="dummyIframe"></iframe>
+            <div class="p-contact__message js-success">
+                <p class="p-contact__message--success">
+                    送信完了しました。ありがとうございました。
+                </p>
+            </div>
+            <div class="p-contact__message js-error">
+                <p class="p-contact__message--error">
+                    送信に失敗しました。ページを更新して再度送信してください。
+                </p>
+            </div>
+        </section>
+        <!-- contact end -->
+
+        <!-- footer start -->
+        <footer class="l-footer">
+            <div class="p-footer">
+                <p class="p-footer__copyright">
+                    Copyright Issei Kondo all rights resrved.
+                </p>
+            </div>
+        </footer>
+
+        <a class="p-to-top js-to-top" href="#a-top">
+            <!-- <i class="p-to-top__icon fas fa-angle-up"></i> -->
         </a>
-        <nav class="p-nav js-nav">
-          <ul class="p-nav__items">
-            <li class="p-nav__item">
-              <a
-                href="#a-about"
-                class="p-nav__link c-link js-link js-about-link"
-                >About</a
-              >
-            </li>
-            <li class="p-nav__item">
-              <a
-                href="#a-skill"
-                class="p-nav__link c-link js-link js-skill-link"
-                >Skill</a
-              >
-            </li>
-            <li class="p-nav__item">
-              <a href="#a-work" class="p-nav__link c-link js-link js-work-link"
-                >Work</a
-              >
-            </li>
-            <li class="p-nav__item">
-              <a
-                href="#a-contact"
-                class="p-nav__link c-link js-link js-contact-link"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="p-nav__trigger u-display--pc-none js-trigger">
-          <span class="js-trigger-part p-nav__trigger-part"></span>
-          <span class="js-trigger-part p-nav__trigger-part"></span>
-          <span class="js-trigger-part p-nav__trigger-part"></span>
-        </div>
-      </div>
-    </header>
-    <!-- header end -->
 
-    <!-- top-start -->
-    <section class="p-top" id="a-top">
-      <div class="p-top__overlay"></div>
-      <div class="p-top__content">
-        <h1 class="p-top__title c-title">senuLab</h1>
-        <p class="p-top__message">This is Issei's portfolio.</p>
-        <a href="#a-contact" class="p-top__btn c-btn js-btn">contact</a>
-      </div>
-    </section>
-    <!-- top end -->
-
-    <!-- about start -->
-    <section class="p-about js-section" id="a-about">
-      <h2 class="p-about__title c-title">About</h2>
-      <div class="fluid rotate gradation"></div>
-      <div class="p-about__content">
-        <div class="p-about__img-wrap">
-          <img
-            src="./img/アイコン.png"
-            alt=""
-            class="p-about__img c-img__icon"
-          />
-        </div>
-        <div class="p-about__message">
-          <p class="p-about__introduction">
-            ご訪問いただきありがとうございます。<br />
-            近藤一晟と申します。岩手大学院で情報工学を専攻し、2020年3月に修了。現在はweb制作・マーケティングを学んでいます。
-          </p>
-          <br />
-          <p class="p-about__qualification-title">保有資格</p>
-          <ul class="p-about__qualification-items">
-            <li class="p-about__qualification-item">応用情報技術者</li>
-            <li class="p-about__qualification-item">TOEI875点</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- about end -->
-
-    <!-- skill start -->
-    <section class="p-skill js-section" id="a-skill">
-      <h2 class="p-skill__title c-title">Skill</h2>
-      <div class="p-skill__container">
-        <div class="p-skill__wrap">
-          <p class="p-skill__kind p-skill__kind--orange">Markup</p>
-          <div class="p-skill__items p-skill__items--three">
-            <div class="p-skill__item p-skill__item--orange">
-              <i class="p-skill__icon fab fa-html5"></i>
-              <p class="p-skill__name">HTML</p>
-            </div>
-            <div class="p-skill__item p-skill__item--orange">
-              <i class="p-skill__icon fab fa-css3-alt"></i>
-              <p class="p-skill__name">CSS</p>
-            </div>
-            <div class="p-skill__item p-skill__item--orange">
-              <i class="p-skill__icon fab fa-sass"></i>
-              <p class="p-skill__name">Sass</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-skill__wrap">
-          <p class="p-skill__kind p-skill__kind--blue">Programming</p>
-          <div class="p-skill__items p-skill__items--five">
-            <div class="p-skill__item p-skill__item--blue">
-              <i class="p-skill__icon fab fa-js"></i>
-              <p class="p-skill__name">JavaScript</p>
-            </div>
-            <div class="p-skill__item p-skill__item--blue">
-              <i class="p-skill__icon devicon-jquery-plain"></i>
-              <p class="p-skill__name">jQuery</p>
-            </div>
-            <div class="p-skill__item p-skill__item--blue">
-              <i class="p-skill__icon devicon-typescript-plain"></i>
-              <p class="p-skill__name">TypeScript</p>
-            </div>
-            <div class="p-skill__item p-skill__item--blue">
-              <i class="p-skill__icon fab fa-python"></i>
-              <p class="p-skill__name">Python</p>
-            </div>
-            <div class="p-skill__item p-skill__item--blue">
-              <i class="p-skill__icon devicon-cplusplus-plain"></i>
-              <p class="p-skill__name">C++</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-skill__wrap">
-          <p class="p-skill__kind p-skill__kind--gray">Database</p>
-          <div class="p-skill__items p-skill__items--one">
-            <div class="p-skill__item p-skill__item--gray">
-              <i class="p-skill__icon devicon-mysql-plain"></i>
-              <p class="p-skill__name">MySQL</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-skill__wrap">
-          <p class="p-skill__kind p-skill__kind--green">Tool</p>
-          <div class="p-skill__items p-skill__items--five">
-            <div class="p-skill__item p-skill__item--green">
-              <i class="p-skill__icon devicon-git-plain"></i>
-              <p class="p-skill__name">Git</p>
-            </div>
-            <div class="p-skill__item p-skill__item--green">
-              <i class="p-skill__icon fab fa-gulp"></i>
-              <p class="p-skill__name">gulp</p>
-            </div>
-            <div class="p-skill__item p-skill__item--green">
-              <i class="p-skill__icon devicon-xd-plain"></i>
-              <p class="p-skill__name">Adobe XD</p>
-            </div>
-            <div class="p-skill__item p-skill__item--green">
-              <i class="p-skill__icon fab fa-figma"></i>
-              <p class="p-skill__name">Figma</p>
-            </div>
-            <div class="p-skill__item p-skill__item--green">
-              <i class="p-skill__icon fab fa-slack"></i>
-              <p class="p-skill__name">Slack</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- skill end -->
-
-    <!-- work start -->
-    <section class="p-work js-section" id="a-work">
-      <h2 class="p-work__title c-title">Work</h2>
-      <div class="p-work__wrap">
-        <div class="p-work__item">
-          <a href="#" class="p-work__link">
-            <img src="./img/mock.jpg" alt="" class="p-work__img c-img" />
-          </a>
-          <h3 class="p-work__introduction">妹のサイト</h3>
-          <p class="p-work__description">
-            デザインからコーディングまで行いました<br />
-          </p>
-        </div>
-
-        <div class="p-work__item">
-          <a href="#" class="p-work__link">
-            <img src="./img/work.jpg" alt="" class="p-work__img c-img" />
-          </a>
-          <h3 class="p-work__introduction">ももどり</h3>
-          <p class="p-work__description">
-            ドメイン取得→webサイト公開→リンクにする
-          </p>
-        </div>
-
-        <div class="p-work__item">
-          <a
-            href="https://senulab.github.io/sample1_design_comp_base/"
-            class="p-work__link"
-          >
-            <img src="./img/sample.png" alt="" class="p-work__img c-img" />
-          </a>
-          <h3 class="p-work__introduction">架空のコーポレートサイト</h3>
-          <p class="p-work__description">
-            架空のコーポーレートサイトのLPです。デザインカンプデータからのコーディングを行いました。レスポンシブ対応しています。
-          </p>
-        </div>
-
-        <div class="p-work__item">
-          <a href="#" class="p-work__link">
-            <img src="./img/work.jpg" alt="" class="p-work__img c-img" />
-          </a>
-          <h3 class="p-work__introduction">ポートフォリオサイト</h3>
-          <p class="p-work__description">
-            現在ご覧いただいているサイトです。デザインから考えてコーディングを行いました。コンタクトフォームはGoogleフォームに紐づけています。
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- work end -->
-
-    <!-- contact start -->
-    <section class="p-contact js-section" id="a-contact" name="entry.">
-      <h2 class="p-contact__title c-title">Contact</h2>
-      <form
-        method="POST"
-        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd_IRQtKEPcraLMWIWucAe2DBPMIb0iWJErW7FjZQUw7DyOEg/formResponse"
-        class="js-form"
-        target="dummyIframe"
-      >
-        <div class="p-contact__item">
-          <div class="p-contact__input-wrap">
-            <label class="p-contact__label">Name</label>
-            <input
-              type="text"
-              class="p-contact__input"
-              name="entry.775375003"
-            />
-          </div>
-          <p class="p-contact__example">ex)山田太郎</p>
-        </div>
-        <div class="p-contact__item">
-          <div class="p-contact__input-wrap">
-            <label class="p-contact__label">Kana</label>
-            <input
-              type="text"
-              class="p-contact__input"
-              name="entry.355693714"
-            />
-          </div>
-          <p class="p-contact__example">ex)ヤマダタロウ</p>
-        </div>
-        <div class="p-contact__item">
-          <div class="p-contact__input-wrap">
-            <label class="p-contact__label">E-mail</label>
-            <input
-              type="email"
-              class="p-contact__input"
-              name="entry.1940204853"
-            />
-          </div>
-          <p class="p-contact__example">ex)yamada@contact.com</p>
-        </div>
-        <div class="p-contact__item">
-          <div class="p-contact__input-wrap">
-            <label class="p-contact__label">Message</label>
-            <textarea
-              class="p-contact__input p-contact__input--textarea"
-              cols="30"
-              rows="10"
-              name="entry.1483884721"
-            ></textarea>
-          </div>
-        </div>
-        <button class="p-contact__btn c-btn c-btn--red">Submit</button>
-      </form>
-      <iframe class="p-contact__dummy" name="dummyIframe"></iframe>
-      <div class="p-contact__message js-success">
-        <p class="p-contact__message--success">
-          送信完了しました。ありがとうございました。
-        </p>
-      </div>
-      <div class="p-contact__message js-error">
-        <p class="p-contact__message--error">
-          送信に失敗しました。ページを更新して再度送信してください。
-        </p>
-      </div>
-    </section>
-    <!-- contact end -->
-
-    <!-- footer start -->
-    <footer class="l-footer">
-      <div class="p-footer">
-        <p class="p-footer__copyright">
-          Copyright Issei Kondo all rights resrved.
-        </p>
-      </div>
-    </footer>
-
-    <a class="p-to-top js-to-top" href="#a-top">
-      <!-- <i class="p-to-top__icon fas fa-angle-up"></i> -->
-    </a>
-
-    <!-- footer end -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="./js/custom.js"></script>
-  </body>
+        <!-- footer end -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="./js/custom.js"></script>
+    </body>
 </html>

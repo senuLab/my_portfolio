@@ -1,184 +1,184 @@
 .p-skill {
-  padding: 10rem 2rem;
-  background-color: $color-cream;
-
-  @include mq("pc") {
-    padding: 10rem 1rem;
-  }
-
-  &__title {
-    position: relative;
-    z-index: 0;
-    margin: 0 auto 7rem;
+    padding: 10rem 2rem;
+    background-color: $color-cream;
 
     @include mq("pc") {
-      margin-bottom: 8rem;
+        padding: 10rem 1rem;
     }
 
-    &::before {
-      position: absolute;
-      content: "S";
-      top: -2.3rem;
-      left: -1.8rem;
-      z-index: -1;
-      color: $color-pink;
-      opacity: 0.5;
-      font-size: 5rem;
+    &__title {
+        position: relative;
+        z-index: 0;
+        margin: 0 auto 7rem;
 
-      @include mq("pc") {
-        font-size: 5.6rem;
-      }
-    }
-  }
+        @include mq("pc") {
+            margin-bottom: 8rem;
+        }
 
-  &__container {
-    display: flex;
-    flex-direction: column;
+        &::before {
+            position: absolute;
+            content: "S";
+            top: -2.3rem;
+            left: -1.8rem;
+            z-index: -1;
+            color: $color-pink;
+            opacity: 0.5;
+            font-size: 5rem;
 
-    @include mq("pc") {
-      flex-direction: row;
-      width: fit-content;
-      margin: 0 auto;
-    }
-  }
-
-  &__wrap {
-    width: 100%;
-    text-align: center;
-
-    @include mq("pc") {
-      width: 15rem;
+            @include mq("pc") {
+                font-size: 5.6rem;
+            }
+        }
     }
 
-    &:not(:last-child) {
-      @include mq("pc") {
-        margin-right: 4rem;
-      }
-    }
-  }
+    &__container {
+        display: flex;
+        flex-direction: column;
 
-  &__kind {
-    margin-bottom: 2rem;
-    font-weight: bold;
-
-    @include mq("pc") {
-      margin-bottom: 3rem;
-      font-size: 1.8rem;
+        @include mq("pc") {
+            flex-direction: row;
+            width: fit-content;
+            margin: 0 auto;
+        }
     }
 
-    &--orange {
-      color: $color-orange;
+    &__wrap {
+        width: 100%;
+        text-align: center;
+
+        @include mq("pc") {
+            width: 15rem;
+        }
+
+        &:not(:last-child) {
+            @include mq("pc") {
+                margin-right: 4rem;
+            }
+        }
     }
 
-    &--blue {
-      color: $color-blue;
+    &__kind {
+        margin-bottom: 2rem;
+        font-weight: bold;
+
+        @include mq("pc") {
+            margin-bottom: 3rem;
+            font-size: 1.8rem;
+        }
+
+        &--orange {
+            color: $color-orange;
+        }
+
+        &--blue {
+            color: $color-blue;
+        }
+
+        &--gray {
+            color: rgb(86, 86, 86);
+        }
+
+        &--green {
+            color: $color-green;
+        }
     }
 
-    &--gray {
-      color: rgb(86, 86, 86);
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto 4rem;
+
+        //@include flex-fitting(8rem, 5);
+
+        &--two {
+            @include flex-fitting(8rem, 2);
+            margin: 0 auto 4rem !important;
+        }
+
+        &--three {
+            @include flex-fitting(8rem, 3);
+        }
+
+        &--five {
+            @include flex-fitting(8rem, 5);
+        }
+
+        @include mq("pc") {
+            margin: 0;
+            width: fit-content;
+        }
     }
 
-    &--green {
-      color: $color-green;
-    }
-  }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 0.5rem;
+        width: 7rem;
+        height: 7rem;
+        background-color: red;
+        border-radius: 50%;
 
-  &__items {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto 4rem;
+        &--orange {
+            background-color: $color-orange;
+        }
 
-    //@include flex-fitting(8rem, 5);
+        &--blue {
+            background-color: $color-blue;
+        }
 
-    &--one {
-      @include flex-fitting(8rem, 1);
-      margin: 0 auto 4rem !important;
-    }
+        &--gray {
+            background-color: rgb(86, 86, 86);
+        }
 
-    &--three {
-      @include flex-fitting(8rem, 3);
-    }
+        &--green {
+            background-color: $color-green;
+        }
 
-    &--five {
-      @include flex-fitting(8rem, 5);
-    }
+        @include mq("pc") {
+            margin: 0;
+            width: 7rem;
 
-    @include mq("pc") {
-      margin: 0;
-      width: fit-content;
-    }
-  }
+            &:not(:last-child) {
+                margin-right: 0;
+            }
 
-  &__item {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin: 0.5rem;
-    width: 7rem;
-    height: 7rem;
-    background-color: red;
-    border-radius: 50%;
+            &:not(:nth-last-child(n + 1):nth-last-child(-n + 2)) {
+                margin-bottom: 1rem;
+            }
 
-    &--orange {
-      background-color: $color-orange;
-    }
-
-    &--blue {
-      background-color: $color-blue;
+            &:nth-child(2n + 1) {
+                margin-right: 1rem;
+            }
+        }
     }
 
-    &--gray {
-      background-color: rgb(86, 86, 86);
+    &__icon {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3rem;
+        color: $color-gray;
+
+        &--xd {
+            padding: 0.6rem 0.3rem;
+            width: 2.8rem;
+            height: 2.8rem;
+            border: 0.1rem solid white;
+            border-radius: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
     }
 
-    &--green {
-      background-color: $color-green;
+    &__name {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1rem;
+        font-weight: bold;
+        color: $color-gray;
     }
-
-    @include mq("pc") {
-      margin: 0;
-      width: 7rem;
-
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-
-      &:not(:nth-last-child(n + 1):nth-last-child(-n + 2)) {
-        margin-bottom: 1rem;
-      }
-
-      &:nth-child(2n + 1) {
-        margin-right: 1rem;
-      }
-    }
-  }
-
-  &__icon {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 3rem;
-    color: $color-gray;
-
-    &--xd {
-      padding: 0.6rem 0.3rem;
-      width: 2.8rem;
-      height: 2.8rem;
-      border: 0.1rem solid white;
-      border-radius: 0.5rem;
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-  }
-
-  &__name {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1rem;
-    font-weight: bold;
-    color: $color-gray;
-  }
 }
