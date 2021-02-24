@@ -390,19 +390,19 @@ body {
 }
 
 .p-about__introduction {
-  line-height: 2rem;
+  line-height: 1.6em;
 }
 
 .p-about__qualification-title {
   font-weight: bold;
   font-size: 1.8rem;
-  line-height: 1.8rem;
+  line-height: 1.6em;
 }
 
 .p-about__qualification-item {
   position: relative;
   padding-left: 2rem;
-  line-height: 2rem;
+  line-height: 1.4em;
 }
 
 .p-about__qualification-item::before {
@@ -974,7 +974,7 @@ body {
 }
 
 .p-work__description {
-  line-height: 1.8rem;
+  line-height: 1.4em;
 }
 
 .stickyadd__header {
@@ -1040,11 +1040,9 @@ body {
   }
   .p-about__qualification-title {
     font-size: 2rem;
-    line-height: 2.2rem;
   }
   .p-about__qualification-item {
     font-size: 1.8rem;
-    line-height: 2.2rem;
   }
   .p-contact {
     padding: 10rem 0;
