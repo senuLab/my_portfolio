@@ -1,117 +1,115 @@
 .p-about {
-  padding: 10rem 2rem;
-  background-color: $color-gray;
-
-  @include mq("pc") {
-    padding: 10rem 0;
-  }
-
-  &__title {
-    position: relative;
-    z-index: 0;
-    margin: 0 auto 7rem;
+    padding: 10rem 2rem;
+    background-color: $color-gray;
 
     @include mq("pc") {
-      margin-bottom: 8rem;
+        padding: 10rem 0;
     }
 
-    &::before {
-      position: absolute;
-      content: "A";
-      top: -2.3rem;
-      left: -1.8rem;
-      z-index: -1;
-      color: $color-pink;
-      opacity: 0.5;
-      font-size: 5rem;
+    &__title {
+        position: relative;
+        z-index: 0;
+        margin: 0 auto 7rem;
 
-      @include mq("pc") {
-        font-size: 5.6rem;
-      }
-    }
-  }
+        @include mq("pc") {
+            margin-bottom: 8rem;
+        }
 
-  &__content {
-    @include mq("pc") {
-      display: flex;
-      margin: 0 auto;
-      width: 70rem;
-    }
-  }
+        &::before {
+            position: absolute;
+            content: "A";
+            top: -2.3rem;
+            left: -1.8rem;
+            z-index: -1;
+            color: $color-pink;
+            opacity: 0.5;
+            font-size: 5rem;
 
-  &__img-wrap {
-    position: relative;
-    margin: 0 auto 4rem;
-    width: 100%;
-    height: 100%;
-    max-width: 30rem;
-    background-color: rgba($color-pink, 0.6);
-    border-radius: 50%;
-
-    @include mq("pc") {
-      flex-basis: 30rem;
-      margin: 0 5rem 0 0;
-      width: 30rem;
+            @include mq("pc") {
+                font-size: 5.6rem;
+            }
+        }
     }
 
-    &::before {
-      content: "";
-      display: block;
-      padding-top: 100%;
-    }
-  }
-
-  &__img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  &__message {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: 35rem;
-  }
-
-  &__introduction {
-    line-height: 2rem;
-
-    @include mq("pc") {
-      font-size: 1.8rem;
-    }
-  }
-
-  &__qualification-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 1.8rem;
-
-    @include mq("pc") {
-      font-size: 2rem;
-      line-height: 2.2rem;
-    }
-  }
-
-  &__qualification-item {
-    position: relative;
-    padding-left: 2rem;
-    line-height: 2rem;
-
-    &::before {
-      font-family: "Font Awesome 5 Free";
-      font-weight: 700;
-      content: "\f00c";
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 0;
+    &__content {
+        @include mq("pc") {
+            display: flex;
+            margin: 0 auto;
+            width: 70rem;
+        }
     }
 
-    @include mq("pc") {
-      font-size: 1.8rem;
-      line-height: 2.2rem;
+    &__img-wrap {
+        position: relative;
+        margin: 0 auto 4rem;
+        width: 100%;
+        height: 100%;
+        max-width: 30rem;
+        background-color: rgba($color-pink, 0.6);
+        border-radius: 50%;
+
+        @include mq("pc") {
+            flex-basis: 30rem;
+            margin: 0 5rem 0 0;
+            width: 30rem;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
     }
-  }
+
+    &__img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__message {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 35rem;
+    }
+
+    &__introduction {
+        line-height: 1.6em;
+
+        @include mq("pc") {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__qualification-title {
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 1.6em;
+
+        @include mq("pc") {
+            font-size: 2rem;
+        }
+    }
+
+    &__qualification-item {
+        position: relative;
+        padding-left: 2rem;
+        line-height: 1.4em;
+
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 700;
+            content: "\f00c";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+
+        @include mq("pc") {
+            font-size: 1.8rem;
+        }
+    }
 }
