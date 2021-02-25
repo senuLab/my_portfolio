@@ -366,7 +366,7 @@ body {
   height: 100%;
   margin: 0 auto 4rem;
   border-radius: 50%;
-  background-color: rgba(221, 152, 165, 0.6);
+  background-color: rgba(221, 152, 165, 0.7);
 }
 
 .p-about__img-wrap::before {

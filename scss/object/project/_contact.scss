@@ -1,120 +1,120 @@
 .p-contact {
-  padding: 10rem 2rem;
-  background-color: $color-cream;
-
-  @include mq("pc") {
-    padding: 10rem 0;
-  }
-
-  &__title {
-    position: relative;
-    z-index: 0;
-    margin: 0 auto 7rem;
+    padding: 10rem 2rem;
+    background-color: $color-cream;
 
     @include mq("pc") {
-      margin-bottom: 8rem;
+        padding: 10rem 0;
     }
 
-    &::before {
-      position: absolute;
-      content: "C";
-      top: -2.3rem;
-      left: -1.8rem;
-      z-index: -1;
-      color: $color-pink;
-      opacity: 0.5;
-      font-size: 5rem;
+    &__title {
+        position: relative;
+        z-index: 0;
+        margin: 0 auto 7rem;
 
-      @include mq("pc") {
-        font-size: 5.6rem;
-      }
-    }
-  }
+        @include mq("pc") {
+            margin-bottom: 8rem;
+        }
 
-  &__item {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 60rem;
+        &::before {
+            position: absolute;
+            content: "C";
+            top: -2.3rem;
+            left: -1.8rem;
+            z-index: -1;
+            color: $color-pink;
+            opacity: 0.5;
+            font-size: 5rem;
 
-    @include mq("pc") {
-      //display: flex;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 3rem;
+            @include mq("pc") {
+                font-size: 5.6rem;
+            }
+        }
     }
 
-    &:last-child {
-      margin-bottom: 4rem;
-    }
-  }
+    &__item {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 60rem;
 
-  &__input-wrap {
-    @include mq("pc") {
-      display: flex;
-      align-items: center;
-    }
-  }
+        @include mq("pc") {
+            //display: flex;
+        }
 
-  &__label {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    width: 7rem;
-    font-weight: bold;
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
 
-    @include mq("pc") {
-      margin: 0;
-      margin-right: 5rem;
-    }
-  }
-
-  &__input {
-    width: 100%;
-    height: 4rem;
-    border: 0.2rem solid rgb(120, 120, 120);
-    border-radius: 0.5rem;
-
-    @include mq("pc") {
-      width: calc(100% - 12rem);
+        &:last-child {
+            margin-bottom: 4rem;
+        }
     }
 
-    &--textarea {
-      width: 100%;
-      height: 100%;
-      max-height: 10rem;
-      resize: none;
-
-      @include mq("pc") {
-        max-height: 15rem;
-      }
+    &__input-wrap {
+        @include mq("pc") {
+            display: flex;
+            align-items: center;
+        }
     }
-  }
 
-  &__example {
-    margin-top: 0.5rem;
-    color: rgba(0, 0, 0, 0.6);
+    &__label {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        width: 7rem;
+        font-weight: bold;
 
-    @include mq("pc") {
-      margin-left: 12rem;
+        @include mq("pc") {
+            margin: 0;
+            margin-right: 5rem;
+        }
     }
-  }
 
-  &__btn {
-    margin: 0 auto;
-    outline: none;
-  }
+    &__input {
+        width: 100%;
+        height: 4rem;
+        border: 0.2rem solid rgb(120, 120, 120);
+        border-radius: 0.5rem;
 
-  &__message {
-    display: none;
-    text-align: center;
-    margin-top: 0.6rem;
+        @include mq("pc") {
+            width: calc(100% - 12rem);
+        }
 
-    &--error {
-      color: $color-pink;
+        &--textarea {
+            width: 100%;
+            height: 100%;
+            max-height: 10rem;
+            resize: none;
+
+            @include mq("pc") {
+                max-height: 15rem;
+            }
+        }
     }
-  }
 
-  &__dummy {
-    display: none;
-  }
+    &__example {
+        margin-top: 0.5rem;
+        color: rgba(0, 0, 0, 0.6);
+
+        @include mq("pc") {
+            margin-left: 12rem;
+        }
+    }
+
+    &__btn {
+        margin: 0 auto;
+        outline: none;
+    }
+
+    &__message {
+        display: none;
+        text-align: center;
+        margin-top: 0.6rem;
+
+        &--error {
+            color: $color-pink;
+        }
+    }
+
+    &__dummy {
+        display: none;
+    }
 }

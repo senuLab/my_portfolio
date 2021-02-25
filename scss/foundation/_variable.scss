@@ -1,18 +1,18 @@
 $breakpoints: (
-  "sp": "screen and (max-width: 767px)",
-  "pc": "screen and (min-width: 768px)",
-  //"sp": "screen and (max-width: 520px)",
-  //"tab": "screen and (min-width: 519px)",
-  //"pc": "screen and (min-width: 959px)",,,,,,
+    "sp": "screen and (max-width: 767px)",
+    "pc": "screen and (min-width: 768px)",
+    //"sp": "screen and (max-width: 520px)",
+    //"tab": "screen and (min-width: 519px)",
+    //"pc": "screen and (min-width: 959px)",,,,,,,
 ) !default;
 
 $layers: (
-  bg-back: -1,
-  to-top: 4,
-  header: 5,
-  overlay: 10,
-  nav-wrap: 15,
-  menu: 20,
+    bg-back: -1,
+    to-top: 4,
+    header: 5,
+    overlay: 10,
+    nav-wrap: 15,
+    menu: 20,
 );
 
 $color-black: #3e3c3c;

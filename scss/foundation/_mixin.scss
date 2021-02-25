@@ -1,30 +1,30 @@
 @mixin mq($breakpoint: "sp") {
-  @media #{map-get($breakpoints,$breakpoint)} {
-    @content;
-  }
+    @media #{map-get($breakpoints,$breakpoint)} {
+        @content;
+    }
 }
 
 @mixin animation($animation-name) {
-  animation: $animation-name;
-  animation-fill-mode: both;
+    animation: $animation-name;
+    animation-fill-mode: both;
 }
 
 @mixin keyframes($animation-name) {
-  @-webkit-keyframes #{$animation-name} {
-    @content;
-  }
-  @-moz-keyframes #{$animation-name} {
-    @content;
-  }
-  @keyframes #{$animation-name} {
-    @content;
-  }
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
 }
 
 @mixin flex-fitting($column-width, $max-column) {
-  @for $i from 1 through $max-column {
-    @media only screen and (min-width: $i * $item-width) {
-      max-width: $i * $item-width;
+    @for $i from 1 through $max-column {
+        @media only screen and (min-width: $i * $item-width) {
+            max-width: $i * $item-width;
+        }
     }
-  }
 }

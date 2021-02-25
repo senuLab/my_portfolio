@@ -1,45 +1,45 @@
 .p-load {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #1e1e1e;
-  z-index: 9999;
-  @include animation(byeShutter 4s forwards);
-
-  &__message {
-    font-size: 5rem;
     position: fixed;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -80%);
-    color: white;
-    @include animation(shutterMessage 3s forwards);
-  }
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
     top: 0;
-    left: 50%;
+    left: 0;
+    right: 0;
     bottom: 0;
-    transform: translateX(-50%);
-    margin: auto;
-  }
+    background-color: #1e1e1e;
+    z-index: 9999;
+    @include animation(byeShutter 4s forwards);
 
-  &::before {
-    background-color: #e2d9ce;
-    width: 0;
-    height: 1px;
-    @include animation(shutterOpen1 4s forwards);
-  }
+    &__message {
+        font-size: 5rem;
+        position: fixed;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        color: white;
+        @include animation(shutterMessage 3s forwards);
+    }
 
-  &::after {
-    width: 100%;
-    height: 0;
-    background-color: #f3f3f3;
-    @include animation(shutterOpen2 4s forwards);
-  }
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        margin: auto;
+    }
+
+    &::before {
+        background-color: #e2d9ce;
+        width: 0;
+        height: 1px;
+        @include animation(shutterOpen1 4s forwards);
+    }
+
+    &::after {
+        width: 100%;
+        height: 0;
+        background-color: #f3f3f3;
+        @include animation(shutterOpen2 4s forwards);
+    }
 }
