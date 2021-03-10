@@ -36,10 +36,6 @@
         width: 100%;
         max-width: 60rem;
 
-        @include mq("pc") {
-            //display: flex;
-        }
-
         &:not(:last-child) {
             margin-bottom: 3rem;
         }

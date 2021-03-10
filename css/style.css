@@ -242,11 +242,6 @@ body {
 
 .l-footer {
   background-color: #3e3c3c;
-  /* height: 10rem;
-
-  @include mq("pc") {
-    height: 18rem;
-  } */
 }
 
 .l-header {
@@ -258,9 +253,6 @@ body {
   height: 8rem;
   background-color: rgba(200, 79, 79, 0);
   transition: all 0.3s;
-  /* @include mq("pc") {
-    height: 8rem;
-  } */
 }
 
 .c-btn, .c-btn--red {
@@ -514,12 +506,6 @@ body {
 }
 
 .p-header__logo {
-  /* margin: auto 0;
-    margin-right: auto;
-    padding: 0.8rem 0;
-    height: 4rem;
-    width: 9rem;
-    transition: all 0.3s; */
   width: 100%;
 }
 
@@ -974,15 +960,12 @@ body {
 }
 
 .p-work__description {
-  line-height: 1.4em;
+  line-height: 1.6em;
 }
 
 .stickyadd__header {
   height: 6rem;
   background-color: rgba(255, 255, 255, 0.7);
-  /* @include mq("pc") {
-      height: 6rem;
-    } */
 }
 
 .stickyadd__logo--hide {

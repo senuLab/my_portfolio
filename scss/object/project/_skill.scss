@@ -88,8 +88,6 @@
         flex-wrap: wrap;
         margin: 0 auto 4rem;
 
-        //@include flex-fitting(8rem, 5);
-
         &--two {
             @include flex-fitting(8rem, 2);
             margin: 0 auto 4rem !important;

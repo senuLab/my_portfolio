@@ -1,9 +1,23 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" prefix=”og: http://ogp.me/ns#”>
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@senu_web" />
+        <meta
+            name="description"
+            content="近藤一晟のポートフォリオサイトへようこそ。"
+        />
+        <meta property="og:url" content="https://github.com/senuLab/my_portfolio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="senuLab" />
+        <meta
+            property="og:description"
+            content="近藤一晟のポートフォリオサイトへようこそ。"
+        />
+        <meta property="og:image" content="./img/header-bg.jpg" />
         <link rel="stylesheet" href="./css/style.css" />
         <link
             href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
@@ -15,12 +29,13 @@
             href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css"
         />
         <title>senuLab</title>
+        <meta>
     </head>
     <body>
         <!-- loading start -->
-        <!-- <div class="p-load">
+        <div class="p-load">
             <p class="p-load__message">senuLab</p>
-        </div> -->
+        </div>
         <!-- loading end -->
 
         <!-- header start -->
@@ -30,12 +45,12 @@
                     <img
                         class="p-header__logo js-logo"
                         src="./img/logo.png"
-                        alt=""
+                        alt="ヘッダーのロゴ画像（白）"
                     />
                     <img
                         class="p-header__logo js-logo--dark stickyadd__logo--hide"
                         src="./img/logo-dark.png"
-                        alt=""
+                        alt="ヘッダーのロゴ画像（黒）"
                     />
                 </a>
                 <nav class="p-nav js-nav">
@@ -99,7 +114,7 @@
                 <div class="p-about__img-wrap">
                     <img
                         src="./img/icon.png"
-                        alt=""
+                        alt="自分のアイコン"
                         class="p-about__img c-img__icon"
                     />
                 </div>
@@ -217,20 +232,6 @@
         <section class="p-work js-section" id="a-work">
             <h2 class="p-work__title c-title">Work</h2>
             <div class="p-work__wrap">
-                <!-- <div class="p-work__item">
-                    <a href="#" class="p-work__link">
-                        <img
-                            src="./img/mock.jpg"
-                            alt=""
-                            class="p-work__img c-img"
-                        />
-                    </a>
-                    <h3 class="p-work__introduction">妹のサイト</h3>
-                    <p class="p-work__description">
-                        デザインからコーディングまで行いました<br />
-                    </p>
-                </div> -->
-
                 <div class="p-work__item">
                     <a
                         href="https://senulab.github.io/momodori"
@@ -238,13 +239,13 @@
                     >
                         <img
                             src="./img/momodori.png"
-                            alt=""
+                            alt="ももどり駅前食堂のLP"
                             class="p-work__img c-img"
                         />
                     </a>
                     <h3 class="p-work__introduction">ももどり駅前食堂様</h3>
                     <p class="p-work__description">
-                        ドメイン取得→webサイト公開→リンクにする
+                        実在するお店をモデルに、デザインから考えてコーディングを行いました。
                     </p>
                 </div>
 
@@ -255,7 +256,7 @@
                     >
                         <img
                             src="./img/sample.png"
-                            alt=""
+                            alt="カンプからのコーディング"
                             class="p-work__img c-img"
                         />
                     </a>
@@ -263,7 +264,7 @@
                         架空のコーポレートサイト
                     </h3>
                     <p class="p-work__description">
-                        架空のコーポーレートサイトのLPです。デザインカンプデータからのコーディングを行いました。レスポンシブ対応しています。
+                        架空のコーポーレートサイトのLPです。デザインカンプデータを基にコーディングを行いました。
                     </p>
                 </div>
 
@@ -274,13 +275,13 @@
                     >
                         <img
                             src="./img/my-portfolio.png"
-                            alt=""
+                            alt="ポートフォリオサイト"
                             class="p-work__img c-img"
                         />
                     </a>
                     <h3 class="p-work__introduction">ポートフォリオサイト</h3>
                     <p class="p-work__description">
-                        現在ご覧いただいているサイトです。デザインから考えてコーディングを行いました。コンタクトフォームはGoogleフォームに紐づけています。
+                        現在ご覧いただいているサイトです。デザインから考えてコーディングを行いました。お問い合わせフォームはGoogleフォームに紐づけています。
                     </p>
                 </div>
             </div>

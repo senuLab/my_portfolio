@@ -1,26 +1,22 @@
 .stickyadd {
-  &__header {
-    height: 6rem;
-    background-color: rgba(255, 255, 255, 0.7);
+    &__header {
+        height: 6rem;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
 
-    /* @include mq("pc") {
-      height: 6rem;
-    } */
-  }
+    &__logo--hide {
+        display: none;
+    }
 
-  &__logo--hide {
-    display: none;
-  }
+    &__link {
+        color: black;
+    }
 
-  &__link {
-    color: black;
-  }
+    &__trigger-part {
+        background-color: black;
+    }
 
-  &__trigger-part {
-    background-color: black;
-  }
-
-  &__nav {
-    background-color: white;
-  }
+    &__nav {
+        background-color: white;
+    }
 }
