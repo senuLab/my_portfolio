@@ -63,7 +63,7 @@
 
         &::after {
             position: absolute;
-            bottom: 0;
+            bottom: -0.3rem;
             left: 50%;
             transform: translateX(-50%);
             content: "";
@@ -71,6 +71,10 @@
             height: 0.2rem;
             background-color: $color-pink;
             transition: all 0.3s;
+
+            @include mq("pc") {
+                bottom: 0.5rem;
+            }
         }
 
         &:hover {

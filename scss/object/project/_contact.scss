@@ -60,7 +60,8 @@
 
         @include mq("pc") {
             margin: 0;
-            margin-right: 5rem;
+            margin-right: 3rem;
+            text-align: center;
         }
     }
 

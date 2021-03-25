@@ -97,6 +97,10 @@
             @include flex-fitting(8rem, 3);
         }
 
+        &--four {
+            @include flex-fitting(8rem, 4);
+        }
+
         &--five {
             @include flex-fitting(8rem, 5);
         }

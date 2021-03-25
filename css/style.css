@@ -272,7 +272,7 @@ body {
   display: block;
   position: absolute;
   top: 50%;
-  right: 1.4rem;
+  right: 1.5rem;
   width: 0.5rem;
   height: 0.5rem;
   transform: translateY(-50%) rotate(-45deg);
@@ -288,12 +288,14 @@ body {
 }
 
 .c-btn:hover::after, .c-btn--red:hover::after {
+  right: 1rem;
   border-right: 0.2rem solid black;
   border-bottom: 0.2rem solid black;
 }
 
 .c-btn--red {
-  border: 0.4rem solid #dd98a5;
+  padding: 1.4rem 3.7rem;
+  border: none;
   background-color: #dd98a5;
 }
 
@@ -358,7 +360,7 @@ body {
   height: 100%;
   margin: 0 auto 4rem;
   border-radius: 50%;
-  background-color: rgba(221, 152, 165, 0.7);
+  background-color: rgba(221, 152, 165, 0.5);
 }
 
 .p-about__img-wrap::before {
@@ -616,7 +618,7 @@ body {
 
 .p-nav__link::after {
   position: absolute;
-  bottom: 0;
+  bottom: -0.3rem;
   left: 50%;
   width: 0;
   height: 0.2rem;
@@ -986,7 +988,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .c-btn, .c-btn--red {
-    padding: 1.4rem 3.44rem;
+    padding: 1.4rem 3.4rem;
     border: 0.4rem solid white;
     font-size: 2rem;
   }
@@ -994,7 +996,8 @@ body {
     right: 1.8rem;
   }
   .c-btn--red {
-    border: 0.4rem solid #dd98a5;
+    padding: 1.8rem 4.15rem;
+    border: none;
   }
   .c-title {
     font-size: 3rem;
@@ -1042,7 +1045,8 @@ body {
   }
   .p-contact__label {
     margin: 0;
-    margin-right: 5rem;
+    margin-right: 3rem;
+    text-align: center;
   }
   .p-contact__input {
     width: calc(100% - 12rem);
@@ -1083,6 +1087,9 @@ body {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.4rem;
+  }
+  .p-nav__link::after {
+    bottom: 0.5rem;
   }
   .p-skill {
     padding: 10rem 1rem;
@@ -1186,6 +1193,9 @@ body {
   .p-skill__items--three {
     max-width: 8rem;
   }
+  .p-skill__items--four {
+    max-width: 8rem;
+  }
   .p-skill__items--five {
     max-width: 8rem;
   }
@@ -1198,6 +1208,9 @@ body {
   .p-skill__items--three {
     max-width: 16rem;
   }
+  .p-skill__items--four {
+    max-width: 16rem;
+  }
   .p-skill__items--five {
     max-width: 16rem;
   }
@@ -1207,12 +1220,18 @@ body {
   .p-skill__items--three {
     max-width: 24rem;
   }
+  .p-skill__items--four {
+    max-width: 24rem;
+  }
   .p-skill__items--five {
     max-width: 24rem;
   }
 }
 
 @media only screen and (min-width: 32rem) {
+  .p-skill__items--four {
+    max-width: 32rem;
+  }
   .p-skill__items--five {
     max-width: 32rem;
   }
