@@ -84,7 +84,7 @@
         }
 
         @include mq("pc") {
-            width: calc((100% - 14rem) / 3);
+            width: calc((100% - 14rem) / 2);
             max-width: 25rem;
             margin: 0;
 
